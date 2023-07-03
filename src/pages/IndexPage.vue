@@ -1,25 +1,26 @@
-<script setup lang="ts">
-import { RouterLink } from 'vue-router'
+<script lang="ts" setup>
+
+import { data } from '@/router/structure';
+import { RouterLink } from 'vue-router';
+
 </script>
-
-
 
 <template>
   <div class="wrapper">
     <header>
-        <div class="years">2019-2023</div>
-        <ul>
-          <li>
-            <a href="#">HOME</a>
-          </li>
-          <li><a class="scrollto" href="#experence">EXPERENCE</a></li>
-          <li><a class="scrollto" href="#skill">SKILL</a></li>
-          <li><a class="scrollto" href="#protfolio">PORTFOLIO</a></li>
-          <li><a class="scrollto" href="#contact">CONTACT</a></li>
-        </ul>
-      </header>
+      <div class="years">2019-2023</div>
+      <ul>
+        <li>
+          <a href="#">HOME</a>
+        </li>
+        <li><a class="scrollto" href="#experience">EXPERENCE</a></li>
+        <li><a class="scrollto" href="#skill">SKILL</a></li>
+        <li><a class="scrollto" href="#protfolio">PORTFOLIO</a></li>
+        <li><a class="scrollto" href="#contact">CONTACT</a></li>
+      </ul>
+    </header>
     <div class="index" id="index">
-     <div class="index-content">
+      <div class="index-content">
         <div class="flex">
           <div class="content-left">
             <div class="txt-lg">作品集</div>
@@ -45,11 +46,11 @@ import { RouterLink } from 'vue-router'
         </div>
       </div>
 
-      <a  class="arrow-down" href="#experence"><img src="/../images/arrow-down.svg"></a>
+      <a class="arrow-down" href="#experience"><img src="/../images/arrow-down.svg"></a>
 
 
     </div>
-    <div class="experence" id="experence">
+    <div class="experience" id="experience">
       <div class="main-title">
         <div class="title-en">Experence</div>
         <span></span>
@@ -80,7 +81,7 @@ import { RouterLink } from 'vue-router'
                   <li>網頁前端切版</li>
                 </ul>
               </div>
-              </div>
+            </div>
           </div>
           <div class="time-line">
             <div class="col-sm-1">
@@ -102,7 +103,7 @@ import { RouterLink } from 'vue-router'
                 </ul>
               </div>
 
-              </div>
+            </div>
           </div>
           <div class="time-line">
             <div class="col-sm-1">
@@ -125,7 +126,7 @@ import { RouterLink } from 'vue-router'
                 </ul>
               </div>
 
-              </div>
+            </div>
           </div>
           <div class="time-line">
             <div class="col-sm-1">
@@ -146,7 +147,7 @@ import { RouterLink } from 'vue-router'
                   <li>依溝通與確認，共同定義切版規範案</li>
                 </ul>
               </div>
-              </div>
+            </div>
           </div>
         </div>
         <div class="exp-content">
@@ -166,14 +167,15 @@ import { RouterLink } from 'vue-router'
               <div class="info-bottom">
                 <ul>
                   <li>與專案經理、業務、工程師等相關人員配合, 協同執行專案</li>
-                  <li>協同設計師使用figma進行網站視覺製作, 共同定義UI設計規範與整合組件 <div class="txt-sm">(色彩/ 模組間距大小/ 字型/ 文字大小, 等等...)</div></li>
+                  <li>協同設計師使用figma進行網站視覺製作, 共同定義UI設計規範與整合組件 <div class="txt-sm">(色彩/ 模組間距大小/ 字型/ 文字大小, 等等...)</div>
+                  </li>
                   <li>製作平台Banner</li>
                   <li>使用Tailwindcss協助前端工程師進行切版</li>
                   <li>Git版本控管</li>
                 </ul>
               </div>
 
-              </div>
+            </div>
           </div>
 
           <div class="time-line">
@@ -199,7 +201,7 @@ import { RouterLink } from 'vue-router'
                   <li>Git版本控管</li>
                 </ul>
               </div>
-              </div>
+            </div>
           </div>
           <div class="time-line">
             <div class="col-sm-1">
@@ -221,7 +223,7 @@ import { RouterLink } from 'vue-router'
                   <li>使用Bootstrap執行網頁的切版, 以及JQuery特效增加頁面操作的體驗度</li>
                 </ul>
               </div>
-              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -283,42 +285,37 @@ import { RouterLink } from 'vue-router'
       </div>
     </div>
 
-     <!--Project -->
-     <div class="project" id="project">
+    <!--Project -->
+    <div class="project" id="project">
       <div class="main-title">
         <div class="title-en">Project</div>
         <span></span>
         <div class="title-tw">專案展示</div>
       </div>
       <div class="flex project-content">
-        <a href="#" class="project-items">
-          <div class="project-img"><img src="../../images/project_001.jpg" alt=""></div>
+        <RouterLink v-for="row in data" :key="row.id" :to="{ name: row.id }" class="project-items">
+          <div class="project-img"><img :src="row.image" alt=""></div>
+          <div class="info-top">
+            <div class="title">{{ row.title }}</div>
+          </div>
+          <div class="info-bottom">{{ row.summary }}</div>
+          <div class="more-btn">完整介紹<span><img src="/images/more-btn.svg" alt=""></span></div>
+        </RouterLink>
+        
+        <!-- <a href="#" class="project-items">
+          <div class="project-img"><img src="/images/project_001.jpg" alt=""></div>
           <div class="info-top">
             <div class="title">Slot Game Web & Mobile UI/UX Design</div>
           </div>
           <div class="info-bottom">
             Slot Game是以電子為產品為主的娛樂服務平台。以響應式裝置方式開發, 特別的是在手機裝置下,
-            是以手遊APP概念做為開發理念, 將手機端以橫向的設計來達到用戶玩手遊感的真實感。 <br/><br/>
+            是以手遊APP概念做為開發理念, 將手機端以橫向的設計來達到用戶玩手遊感的真實感。 <br /><br />
 
             我在專案裡負責網站的UIUX設計, 在視覺上採用暗色系, 搭配元素繽紛的色調, 試圖營造輕鬆、
             釋放壓力、愉快的氛圍, 讓使用者能沈靜在娛樂的情境之中。
           </div>
-          <div class="more-btn">完整介紹<span><img src="../../images/more-btn.svg" alt=""></span></div>
-        </a>
-        <a href="#" class="project-items">
-          <div class="project-img"><img src="../../images/project_001.jpg" alt=""></div>
-          <div class="info-top">
-            <div class="title">Slot Game Web & Mobile UI/UX Design</div>
-          </div>
-          <div class="info-bottom">
-            Slot Game是以電子為產品為主的娛樂服務平台。以響應式裝置方式開發, 特別的是在手機裝置下,
-            是以手遊APP概念做為開發理念, 將手機端以橫向的設計來達到用戶玩手遊感的真實感。 <br/><br/>
-
-            我在專案裡負責網站的UIUX設計, 在視覺上採用暗色系, 搭配元素繽紛的色調, 試圖營造輕鬆、
-            釋放壓力、愉快的氛圍, 讓使用者能沈靜在娛樂的情境之中。
-          </div>
-          <div class="more-btn">完整介紹<span><img src="../../images/more-btn.svg" alt=""></span></div>
-        </a>
+          <div class="more-btn">完整介紹<span><img src="/images/more-btn.svg" alt=""></span></div>
+        </a> -->
 
       </div>
     </div>
@@ -327,7 +324,7 @@ import { RouterLink } from 'vue-router'
     <div class="contact" id="contact">
       <div class="contact-info">更多資訊 歡迎聯繫</div>
       <div class="contact-mail">kiumiaiyu@gmail.com</div>
-      <div class="bottm-hand"><img src="../../images/bottom-hand.svg" alt=""></div>
+      <div class="bottm-hand"><img src="/images/bottom-hand.svg" alt=""></div>
     </div>
   </div>
   <div>
@@ -338,7 +335,3 @@ import { RouterLink } from 'vue-router'
     </nav>
   </div>
 </template>
-
-<style lang="scss">
-
-</style>

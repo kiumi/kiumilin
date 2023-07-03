@@ -23,6 +23,11 @@
 @media (min-width: 1024px) {
 
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #FFF4EA;
   color: #2B2B3F;
@@ -33,7 +38,7 @@ body {
 .index{
   height: 100vh;
 }
-.experence, .project, .skills, .index, .project-detail, .web-company {
+.experience, .project, .skills, .index, .project-detail, .web-company {
   padding: 6%;
   position: relative;
   box-sizing: border-box;
@@ -238,7 +243,7 @@ body {
     }
   }
 }
-.experence {
+.experience {
   position: relative;
   .flex {
     gap: 44px
@@ -279,7 +284,7 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    background: url(../../images/title-deco.svg) no-repeat;
+    background: url(/images/title-deco.svg) no-repeat;
     width: 24px;
     height: 18px;
   }
@@ -321,15 +326,15 @@ body {
       background-size: contain;
     }
     &:first-child::before {
-      background: url(../../images/items-01.svg) no-repeat;
+      background: url(/images/items-01.svg) no-repeat;
       background-size: contain;
     }
     &:nth-child(2)::before{
-      background: url(../../images/items-02.svg) no-repeat;
+      background: url(/images/items-02.svg) no-repeat;
       background-size: contain;
     }
     &:last-child::before {
-      background: url(../../images/items-03.svg) no-repeat;
+      background: url(/images/items-03.svg) no-repeat;
       background-size: contain;
     }
     .info-top {
@@ -734,7 +739,7 @@ header {
       }
     }
   }
-  .experence, .project, .skills, .index {
+  .experience, .project, .skills, .index {
     padding: 4%;
   }
   .exp-content {
@@ -872,7 +877,7 @@ header {
       height: 300px;
     }
   }
-  .experence {
+  .experience {
     .flex {
       display: block;
     }
