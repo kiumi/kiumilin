@@ -2,6 +2,7 @@
 
 const props = defineProps<{ images: string[] }>();
 
+console.log(props);
 
 </script>
 
@@ -13,6 +14,10 @@ const props = defineProps<{ images: string[] }>();
         <div class="title-en">Project Details</div>
         <span></span>
         <div class="title-tw">娛樂平台</div>
+      </div>
+      <div class="describe">
+        <div class="company_url">網址: <a href="www.logerp.com.tw">www.logerp.com.tw</a></div>
+        <div class="mywork">開發:<span>設計/ 切版</span></div>
       </div>
       <div class="detail-content">
         <template v-for="(image, index) in props.images" :key="index">

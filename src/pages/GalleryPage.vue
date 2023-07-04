@@ -26,7 +26,7 @@ const props = defineProps<{ lists: ListData[] }>();
       <div class="web-content">
         <template v-for="row in props.lists" :key="row.id">
           <RouterLink :to="{ name: row.id }" class="items">
-            <img src="/images/web_company/web_001.jpg" alt="">
+            <img :src="row.image" alt="">
           </RouterLink>
         </template>
         <!-- <a href="#" class="items"><img src="/images/web_company/web_001.jpg" alt=""></a>

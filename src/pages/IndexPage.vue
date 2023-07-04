@@ -290,7 +290,7 @@ import { RouterLink } from 'vue-router';
       <div class="main-title">
         <div class="title-en">Project</div>
         <span></span>
-        <div class="title-tw">專案展示</div>
+        <div class="title-tw">專案介紹</div>
       </div>
       <div class="flex project-content">
         <RouterLink v-for="row in data" :key="row.id" :to="{ name: row.id }" class="project-items">
@@ -301,7 +301,7 @@ import { RouterLink } from 'vue-router';
           <div class="info-bottom">{{ row.summary }}</div>
           <div class="more-btn">完整介紹<span><img src="/images/more-btn.svg" alt=""></span></div>
         </RouterLink>
-        
+
         <!-- <a href="#" class="project-items">
           <div class="project-img"><img src="/images/project_001.jpg" alt=""></div>
           <div class="info-top">

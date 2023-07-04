@@ -177,9 +177,10 @@ body {
 .project {
   .project-content {
     gap: 40px;
+    flex-wrap: wrap;
   }
   .project-items {
-    width: 50%;
+    width: calc(50% - 20px);
     flex-shrink: 1;
     color: #2B2B3F;
     text-decoration: none;
@@ -226,7 +227,7 @@ body {
     }
     .project-img {
       overflow: hidden;
-      height: 360px;
+      height: 450px;
       img {
         width: 100%;
         transition: all 0.5s;
@@ -239,7 +240,6 @@ body {
       font-size: 16px;
       letter-spacing: 1px;
       line-height: 28px;
-      height: 170px;
     }
   }
 }
@@ -529,6 +529,7 @@ header {
   padding: 2.5% 6%;
   z-index: 3;
   position: fixed;
+
   .years {
     font-size: 22px;
     font-weight: 550;
