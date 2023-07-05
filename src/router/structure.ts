@@ -9,11 +9,14 @@ export interface BaseData {
 export interface ListData extends BaseData {
   type: "list",
   images: string[],
+  url?: string,
+  myWork?: string,
 }
 
 export interface GalleryData extends BaseData {
   type: "gallery",
   lists: DiverseData,
+  navigation?: { title: string, jumpToId: string }[]
 }
 
 type DiverseData = (ListData | GalleryData)[];
@@ -104,6 +107,16 @@ export const data: DiverseData = [
     image: "/images/web_company/web_company_cover.jpg",
     title: "形象網站",
     summary: "主要為形象網站的網頁主視覺設計，依造客戶需求，設計符合公司形象的網站視覺。工作範疇包括視覺設計/ Banner圖製作與前端切版。",
+    navigation: [
+      {
+        title: "形象網站",
+        jumpToId: "gallery_001"
+      },
+      // {
+      //   title: "遊戲娛樂",
+      //   jumpToId: "gallery_002"
+      // }
+    ],
     lists: [
       {
         type: "list",
@@ -111,6 +124,8 @@ export const data: DiverseData = [
         sort: 0,
         image: "/images/web_company/web_001.jpg",
         summary: "這裡是描述",
+        url: "www.google.com",
+        myWork: "吃飯睡覺像小豬",
         images: [
           "/images/web_company/web_001.jpg",
           "/images/web_company/web_001_2.jpg",

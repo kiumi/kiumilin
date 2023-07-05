@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { ListData } from '@/router/structure';
+import type { ListData, GalleryData } from '@/router/structure';
 
 
-const props = defineProps<{ lists: ListData[] }>();
+const props = defineProps<{ lists: ListData[], navigation: GalleryData['navigation'] }>();
 
 
 </script>
@@ -17,11 +17,16 @@ const props = defineProps<{ lists: ListData[] }>();
         <div class="title-tw">網頁設計</div>
       </div>
 
-      <!-- 切換頁籤 -->
-      <div class="tab-list">
-        <div class="tab active">形象網站</div>
-        <div class="tab">遊戲娛樂</div>
-      </div>
+      <template v-if="props.navigation && props.navigation.length">
+        <!-- 切換頁籤 -->
+        <div class="tab-list">
+          <template v-for="(row, index) in props.navigation" :key="index">
+            <RouterLink :to="{ name: row.jumpToId }" class="tab" active-class="active">
+              {{ row.title }}
+            </RouterLink>
+          </template>
+        </div>
+      </template>
 
       <div class="web-content">
         <template v-for="row in props.lists" :key="row.id">

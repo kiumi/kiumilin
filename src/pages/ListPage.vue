@@ -1,8 +1,6 @@
 <script setup lang="ts">
 
-const props = defineProps<{ images: string[] }>();
-
-console.log(props);
+const props = defineProps<{ images: string[], url?: string, myWork?: string }>();
 
 </script>
 
@@ -15,9 +13,9 @@ console.log(props);
         <span></span>
         <div class="title-tw">娛樂平台</div>
       </div>
-      <div class="describe">
-        <div class="company_url">網址: <a href="www.logerp.com.tw">www.logerp.com.tw</a></div>
-        <div class="mywork">開發:<span>設計/ 切版</span></div>
+      <div class="describe" v-if="props.url || props.myWork">
+        <div class="company_url" v-if="props.url">網址: <a :href="props.url">{{ props.url }}</a></div>
+        <div class="mywork" v-if="props.myWork">開發: <span>{{ props.myWork }}</span></div>
       </div>
       <div class="detail-content">
         <template v-for="(image, index) in props.images" :key="index">
