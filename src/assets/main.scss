@@ -51,7 +51,7 @@ body {
   .items {
     background: #ffdebe;
     width: calc(33% - 10px);
-    height: 320px;
+    height: 280px;
     overflow: hidden;
     position: relative;
     display: block;
@@ -87,6 +87,8 @@ body {
     padding: 8px 24px;
     border: 1px solid #2B2B3F;
     border-radius: 35px;
+    text-decoration: none;
+    color: #2B2B3F;
     &.active {
       color: #fff4ea;
       background:#2B2B3F;
@@ -94,9 +96,12 @@ body {
   }
 }
 .detail-content {
+  margin: 30px auto 0;
+  width: 88%;
   img {
     width: 100%;
     display: block;
+    // margin-bottom: 24px;
   }
 }
 .back-btn {
@@ -135,10 +140,19 @@ body {
   }
 
 }
+.inner-page-describe {
+  padding: 0 30px 30px 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  // margin-top: -15px;
+  width: 80%;
+  line-height: 1.8;
+}
 .contact {
   text-align: center;
   font-size: 30px;
   line-height: 1.8;
+  padding: 150px 0 150px;
   .contact-info {
     font-weight: bold;
   }
@@ -152,7 +166,16 @@ body {
   }
   .bottm-hand {
     margin-top: 40px;
-    animation: dong 1s infinite;
+    animation: dong 2s infinite;
+    position: fixed;
+    right: 30px;
+    bottom: 150px;
+    width: 80px;
+    cursor: pointer;
+    transition: all .5s;
+    img {
+      width: 100%;
+    }
   }
 }
 @keyframes dong {
@@ -227,7 +250,7 @@ body {
     }
     .project-img {
       overflow: hidden;
-      height: 450px;
+      height: 420px;
       img {
         width: 100%;
         transition: all 0.5s;
@@ -598,15 +621,42 @@ header {
   position: absolute;
   right: 0;
   bottom: 2.5%;
+  // animation: twinkle 0.5s infinite alternate;
+  animation: baloon 3s infinite;
+}
+@keyframes baloon{
+  0% { transform:translateY(20px);}
+  50% {transform:translateY(40px);}
+  100% {transform:translateY(20px);}
+}
+@media (max-width: 1660px) {
+  .web-content {
+    .items {
+      height: 255px;
+    }
+  }
 }
 
 @media (max-width: 1580px) {
+  .project {
+    .project-content {
+      gap: 40px;
+    }
+    .project-items {
+      .project-img {
+        height: 335px;
+      }
+      .info-top {
+        padding: 16px 0 8px 0;
+      }
+    }
+  }
   .web-content {
     gap: 20px;
     display: flex;
     flex-flow: wrap;
     .items {
-      height: 280px;
+      height: 230px;
     }
   }
   .content-right {
@@ -650,6 +700,13 @@ header {
   }
 }
 @media (max-width: 1280px)  {
+  .project {
+    .project-items {
+      .project-img {
+        height: 270px;
+      }
+    }
+  }
   .content-right {
     height: 450px;
     bottom: 20%;
@@ -731,6 +788,11 @@ header {
       img {
         width: 100%;
       }
+    }
+  }
+  .web-content {
+    .items {
+      height: 135px;
     }
   }
   .project {

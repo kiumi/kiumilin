@@ -3,6 +3,9 @@
 import { data } from '@/router/structure';
 import { RouterLink } from 'vue-router';
 
+
+const filterData = data.filter((row) => row.notInIndex !== true);
+
 </script>
 
 <template>
@@ -293,7 +296,7 @@ import { RouterLink } from 'vue-router';
         <div class="title-tw">專案介紹</div>
       </div>
       <div class="flex project-content">
-        <RouterLink v-for="row in data" :key="row.id" :to="{ name: row.id }" class="project-items">
+        <RouterLink v-for="row in filterData" :key="row.id" :to="{ name: row.id }" class="project-items" target="_blank">
           <div class="project-img"><img :src="row.image" alt=""></div>
           <div class="info-top">
             <div class="title">{{ row.title }}</div>
@@ -324,7 +327,7 @@ import { RouterLink } from 'vue-router';
     <div class="contact" id="contact">
       <div class="contact-info">更多資訊 歡迎聯繫</div>
       <div class="contact-mail">kiumiaiyu@gmail.com</div>
-      <div class="bottm-hand"><img src="/images/bottom-hand.svg" alt=""></div>
+      <a href="#" class="bottm-hand"><img src="/images/bottom-hand.png" alt=""></a>
     </div>
   </div>
   <div>

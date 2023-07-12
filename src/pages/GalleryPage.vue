@@ -1,9 +1,17 @@
 <script setup lang="ts">
 import type { ListData, GalleryData } from '@/router/structure';
+import { useRouter } from 'vue-router';
 
+const props = defineProps<{ lists: ListData[], navigation: GalleryData['navigation'], pageTitle?: string }>();
+const $router = useRouter();
 
-const props = defineProps<{ lists: ListData[], navigation: GalleryData['navigation'] }>();
-
+function backToPreviousOrIndex() {
+  if (history.length > 2) {
+    $router.go(-1)
+  } else {
+    $router.push('/')
+  }
+}
 
 </script>
 
@@ -14,8 +22,9 @@ const props = defineProps<{ lists: ListData[], navigation: GalleryData['navigati
       <div class="main-title">
         <div class="title-en">Web Design</div>
         <span></span>
-        <div class="title-tw">網頁設計</div>
+        <div class="title-tw">{{ props.pageTitle ?? "網頁平台" }}</div>
       </div>
+
 
       <template v-if="props.navigation && props.navigation.length">
         <!-- 切換頁籤 -->
@@ -30,7 +39,7 @@ const props = defineProps<{ lists: ListData[], navigation: GalleryData['navigati
 
       <div class="web-content">
         <template v-for="row in props.lists" :key="row.id">
-          <RouterLink :to="{ name: row.id }" class="items">
+          <RouterLink :to="{ name: row.id }" class="items" target="_blank">
             <img :src="row.image" alt="">
           </RouterLink>
         </template>
@@ -42,7 +51,7 @@ const props = defineProps<{ lists: ListData[], navigation: GalleryData['navigati
         <a href="#" class="items"><img src="/images/web_company/web_006.jpg" alt=""></a> -->
       </div>
 
-      <a href="/" class="back-btn">
+      <a @click="backToPreviousOrIndex" class="back-btn">
         <span class="back-btn-icon"><img src="/images/back-btn.svg" alt=""></span>
           Back to Index
       </a>

@@ -4,6 +4,8 @@ export interface BaseData {
   image: string,
   title?: string,
   summary?: string,
+  notInIndex?: boolean,
+  pageTitle?: string,
 }
 
 export interface ListData extends BaseData {
@@ -28,6 +30,7 @@ export const data: DiverseData = [
     sort: 0,
     image: "/images/project_001.jpg",
     title: "Slot Game Web & Mobile UI/UX Design",
+    pageTitle: "123123",
     summary: "Slot Game是以電子為產品為主的娛樂服務平台。以響應式裝置方式開發, 特別的是在手機裝置下,\
     是以手遊APP概念做為開發理念, 將手機端以橫向的設計來達到用戶玩手遊感的真實感。 \
     \
@@ -100,11 +103,13 @@ export const data: DiverseData = [
       "/images/project_003/project_003_21.webp",
     ]
   },
+  // 網頁設計
   {
     type: "gallery",
     id: "gallery_001",
     sort: 0,
     image: "/images/web_company/web_company_cover.jpg",
+    pageTitle: "網頁設計",
     title: "形象網站",
     summary: "主要為形象網站的網頁主視覺設計，依造客戶需求，設計符合公司形象的網站視覺。工作範疇包括視覺設計/ Banner圖製作與前端切版。",
     navigation: [
@@ -112,10 +117,10 @@ export const data: DiverseData = [
         title: "形象網站",
         jumpToId: "gallery_001"
       },
-      // {
-      //   title: "遊戲娛樂",
-      //   jumpToId: "gallery_002"
-      // }
+      {
+        title: "遊戲娛樂",
+        jumpToId: "gallery_002"
+      }
     ],
     lists: [
       {
@@ -123,9 +128,8 @@ export const data: DiverseData = [
         id: "web_001",
         sort: 0,
         image: "/images/web_company/web_001.jpg",
-        summary: "這裡是描述",
-        url: "www.google.com",
-        myWork: "吃飯睡覺像小豬",
+        url: "https://www.lbo.com.tw",
+        myWork: "設計/切版",
         images: [
           "/images/web_company/web_001.jpg",
           "/images/web_company/web_001_2.jpg",
@@ -135,9 +139,12 @@ export const data: DiverseData = [
         type: "list",
         id: "web_002",
         sort: 0,
-        image: "/images/web_company/web_007.jpg",
+        image: "/images/web_company/web_002.jpg",
+        url: "https://www.cbookstore.com.tw",
+        myWork: "設計/切版",
         images: [
-          "/images/web_company/web_007.jpg",
+          "/images/web_company/web_002.jpg",
+          "/images/web_company/web_002_2.jpg",
         ]
       },
       {
@@ -145,22 +152,11 @@ export const data: DiverseData = [
         id: "web_003",
         sort: 0,
         image: "/images/web_company/web_003.jpg",
+        url: "https://www.gu-shen.com.tw",
+        myWork: "設計/切版",
         images: [
-          "/images/project_001/project_001_1.webp",
-          "/images/project_001/project_001_2.webp",
-          "/images/project_001/project_001_3.webp",
-          "/images/project_001/project_001_4.webp",
-          "/images/project_001/project_001_5.webp",
-          "/images/project_001/project_001_6.webp",
-          "/images/project_001/project_001_7.webp",
-          "/images/project_001/project_001_8.webp",
-          "/images/project_001/project_001_9.webp",
-          "/images/project_001/project_001_10.webp",
-          "/images/project_001/project_001_11.webp",
-          "/images/project_001/project_001_12.webp",
-          "/images/project_001/project_001_13.webp",
-          "/images/project_001/project_001_14.webp",
-          "/images/project_001/project_001_15.webp",
+          "/images/web_company/web_003.jpg",
+          "/images/web_company/web_003_2.jpg",
         ]
       },
       {
@@ -169,28 +165,259 @@ export const data: DiverseData = [
         sort: 0,
         image: "/images/web_company/web_004.jpg",
         images: [
-          "/images/project_001/project_001_1.webp",
-          "/images/project_001/project_001_2.webp",
-          "/images/project_001/project_001_3.webp",
-          "/images/project_001/project_001_4.webp",
-          "/images/project_001/project_001_5.webp",
-          "/images/project_001/project_001_6.webp",
-          "/images/project_001/project_001_7.webp",
-          "/images/project_001/project_001_8.webp",
-          "/images/project_001/project_001_9.webp",
-          "/images/project_001/project_001_10.webp",
-          "/images/project_001/project_001_11.webp",
-          "/images/project_001/project_001_12.webp",
-          "/images/project_001/project_001_13.webp",
-          "/images/project_001/project_001_14.webp",
-          "/images/project_001/project_001_15.webp",
+          "/images/web_company/web_004.jpg",
+          "/images/web_company/web_004_2.jpg",
         ]
       },
       {
         type: "list",
         id: "web_005",
         sort: 0,
+        image: "/images/web_company/web_008.jpg",
+        url: "https://www.neihu101.com.tw",
+        myWork: "設計/切版",
+        images: [
+          "/images/web_company/web_008.jpg",
+          "/images/web_company/web_008_2.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_006",
+        sort: 0,
         image: "/images/web_company/web_005.jpg",
+        images: [
+          "/images/web_company/web_005.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_007",
+        sort: 0,
+        image: "/images/web_company/web_006.jpg",
+        images: [
+          "/images/web_company/web_006.jpg",
+          "/images/web_company/web_006_2.jpg"
+        ]
+      },
+      {
+        type: "list",
+        id: "web_008",
+        sort: 0,
+        image: "/images/web_company/web_007.jpg",
+        url: "https://www.logerp.com.tw",
+        myWork: "設計/切版",
+        images: [
+          "/images/web_company/web_007.jpg",
+          "/images/web_company/web_007_2.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_009",
+        sort: 0,
+        image: "/images/web_company/web_011.jpg",
+        url: "https://www.xyu.com.tw",
+        myWork: "設計/切版",
+        images: [
+          "/images/web_company/web_011.jpg",
+          "/images/web_company/web_011_2.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_010",
+        sort: 0,
+        image: "/images/web_company/web_023.png",
+        url: "http://www.nutricom.com.tw/index.html",
+        myWork: "設計/切版",
+        images: [
+          "/images/web_company/web_023.png",
+          "/images/web_company/web_023_2.png",
+          "/images/web_company/web_023_3.png",
+          "/images/web_company/web_023_4.png",
+          "/images/web_company/web_023_5.png",
+          "/images/web_company/web_023_6.png",
+          "/images/web_company/web_023_7.png",
+          "/images/web_company/web_023_8.png",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_011",
+        sort: 0,
+        image: "/images/web_company/web_014.jpg",
+        url: "",
+        myWork: "設計",
+        images: [
+          "/images/web_company/web_014.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_012",
+        sort: 0,
+        image: "/images/web_company/web_018.jpg",
+        url: "https://www.herbterra.com.tw/",
+        myWork: "設計/切版",
+        images: [
+          "/images/web_company/web_018.jpg",
+          "/images/web_company/web_018_2.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_013",
+        sort: 0,
+        image: "/images/web_company/web_017.jpg",
+        url: "https://tw.cleanmold.com.tw",
+        myWork: "設計",
+        images: [
+          "/images/web_company/web_017.jpg",
+          "/images/web_company/web_017_2.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_014",
+        sort: 0,
+        image: "/images/web_company/web_019.jpg",
+        url: "",
+        myWork: "設計/切版",
+        images: [
+          "/images/web_company/web_019.jpg",
+          "/images/web_company/web_019_2.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_015",
+        sort: 0,
+        image: "/images/web_company/web_027.jpg",
+        url: "",
+        myWork: "切版",
+        images: [
+          "/images/web_company/web_027.jpg",
+          "/images/web_company/web_027_2.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_016",
+        sort: 0,
+        image: "/images/web_company/web_020.jpg",
+        url: "https://www.0800698198.com.tw",
+        myWork: "設計/切版",
+        images: [
+          "/images/web_company/web_020.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_017",
+        sort: 0,
+        image: "/images/web_company/web_021.jpg",
+        url: "https://www.etc-s.com",
+        myWork: "設計/切版",
+        images: [
+          "/images/web_company/web_021.jpg",
+          "/images/web_company/web_021_2.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_018",
+        sort: 0,
+        image: "/images/web_company/web_022.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/web_company/web_012.jpg",
+          "/images/web_company/web_012_2.jpg",
+          "/images/web_company/web_022_3.jpg",
+          "/images/web_company/web_022_4.jpg",
+          "/images/web_company/web_022_5.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_019",
+        sort: 0,
+        image: "/images/web_company/web_024.jpg",
+        url: "https://www.js-tech.tw/index.html",
+        myWork: "設計/切版",
+        images: [
+          "/images/web_company/web_024.jpg",
+          "/images/web_company/web_024_2.jpeg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_020",
+        sort: 0,
+        image: "/images/web_company/web_029.jpg",
+        url: "",
+        myWork: "切版",
+        images: [
+          "/images/web_company/web_029.jpg",
+          "/images/web_company/web_029_2.jpg",
+        ]
+      },
+
+      {
+        type: "list",
+        id: "web_021",
+        sort: 0,
+        image: "/images/web_company/web_028.jpg",
+        url: "",
+        myWork: "切版",
+        images: [
+          "/images/web_company/web_028.jpg",
+          "/images/web_company/web_028_2.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_022",
+        sort: 0,
+        image: "/images/web_company/web_012.jpg",
+        url: "",
+        myWork: "切版",
+        images: [
+          "/images/web_company/web_012.jpg",
+          "/images/web_company/web_012_2.jpg",
+        ]
+      },
+    ]
+  },
+  {
+    type: "gallery",
+    id: "gallery_002",
+    notInIndex: false,
+    sort: 0,
+    image: "/images/web_game/web_game_cover.jpg",
+    title: "遊戲平台",
+    summary: "主要為形象網站的網頁主視覺設計，依造客戶需求，設計符合公司形象的網站視覺。工作範疇包括視覺設計/ Banner圖製作與前端切版。",
+    navigation: [
+      {
+        title: "形象網站",
+        jumpToId: "gallery_001"
+      },
+      {
+        title:"遊戲娛樂",
+        jumpToId: "gallery_002"
+      }
+    ],
+    lists: [
+      {
+        type: "list",
+        id: "web_002_07",
+        sort: 0,
+        pageTitle: "yoyoyoyoyo",
+        image: "/images/project_001.jpg",
+        summary: "這裡是描述",
+        url: "www.google.com",
+        myWork: "吃飯睡覺像小豬",
         images: [
           "/images/project_001/project_001_1.webp",
           "/images/project_001/project_001_2.webp",
@@ -211,27 +438,417 @@ export const data: DiverseData = [
       },
       {
         type: "list",
-        id: "web_006",
+        id: "web_002_09",
         sort: 0,
-        image: "/images/web_company/web_006.jpg",
+        pageTitle: "yoyoyoyoyo",
+        image: "/images/project_002/project_002_1.webp",
+        summary: "這裡是描述",
+        url: "www.google.com",
+        myWork: "吃飯睡覺像小豬",
         images: [
-          "/images/project_001/project_001_1.webp",
-          "/images/project_001/project_001_2.webp",
-          "/images/project_001/project_001_3.webp",
-          "/images/project_001/project_001_4.webp",
-          "/images/project_001/project_001_5.webp",
-          "/images/project_001/project_001_6.webp",
-          "/images/project_001/project_001_7.webp",
-          "/images/project_001/project_001_8.webp",
-          "/images/project_001/project_001_9.webp",
-          "/images/project_001/project_001_10.webp",
-          "/images/project_001/project_001_11.webp",
-          "/images/project_001/project_001_12.webp",
-          "/images/project_001/project_001_13.webp",
-          "/images/project_001/project_001_14.webp",
-          "/images/project_001/project_001_15.webp",
+          "/images/project_002/project_002_1.webp",
+          "/images/project_002/project_002_2.webp",
+          "/images/project_002/project_002_3.webp",
+          "/images/project_002/project_002_4.webp",
+          "/images/project_002/project_002_5.webp",
         ]
+      },
+      {
+        type: "list",
+        id: "web_002_08",
+        sort: 0,
+        pageTitle: "yoyoyoyoyo",
+        image: "/images/project_003/project_003_1.webp",
+        summary: "這裡是描述",
+        url: "www.google.com",
+        myWork: "吃飯睡覺像小豬",
+        images: [
+          "/images/project_003/project_003_1.webp",
+          "/images/project_003/project_003_2.webp",
+          "/images/project_003/project_003_3.webp",
+          "/images/project_003/project_003_4.webp",
+          "/images/project_003/project_003_5.webp",
+          "/images/project_003/project_003_6.webp",
+          "/images/project_003/project_003_7.webp",
+          "/images/project_003/project_003_8.webp",
+          "/images/project_003/project_003_9.webp",
+          "/images/project_003/project_003_10.webp",
+          "/images/project_003/project_003_11.webp",
+          "/images/project_003/project_003_12.webp",
+          "/images/project_003/project_003_13.webp",
+          "/images/project_003/project_003_14.webp",
+          "/images/project_003/project_003_15.webp",
+          "/images/project_003/project_003_16.webp",
+          "/images/project_003/project_003_17.webp",
+          "/images/project_003/project_003_19.webp",
+          "/images/project_003/project_003_20.webp",
+          "/images/project_003/project_003_21.webp",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_002_10",
+        sort: 0,
+        pageTitle: "BetSports前導頁面設計",
+        image: "/images/project_004/project_004_1.webp",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/project_004/project_004_1.webp",
+          "/images/project_004/project_004_2.webp",
+          "/images/project_004/project_004_3.webp",
+          "/images/project_004/project_004_4.webp",
+        ]
+      },
+
+      {
+        type: "list",
+        id: "web_002_02",
+        sort: 0,
+        pageTitle: "yoyoyoyoyo",
+        image: "/images/web_game/game_002/game_002_cover.webp",
+        summary: "這裡是描述",
+        url: "www.google.com",
+        myWork: "吃飯睡覺像小豬",
+        images: [
+          "/images/web_game/game_002/game_002_2.webp",
+          "/images/web_game/game_002/game_002_1.webp",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_002_03",
+        sort: 0,
+        pageTitle: "yoyoyoyoyo",
+        image: "/images/web_game/game_003/game_003_cover.webp",
+        summary: "這裡是描述",
+        url: "www.google.com",
+        myWork: "吃飯睡覺像小豬",
+        images: [
+          "/images/web_game/game_003/game_003_1.webp",
+          "/images/web_game/game_003/game_003_2.webp",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_002_01",
+        sort: 0,
+        pageTitle: "yoyoyoyoyo",
+        image: "/images/web_game/game_001/game_001_cover.webp",
+        summary: "這裡是描述",
+        url: "www.google.com",
+        myWork: "吃飯睡覺像小豬",
+        images: [
+          "/images/web_game/game_001/game_001_1.jpg",
+          "/images/web_game/game_001/game_001_2.jpg",
+          "/images/web_game/game_001/game_001_3.jpg",
+          "/images/web_game/game_001/game_001_4.jpg",
+          "/images/web_game/game_001/game_001_5.jpg",
+          "/images/web_game/game_001/game_001_6.jpg",
+          "/images/web_game/game_001/game_001_7.jpg",
+          "/images/web_game/game_001/game_001_8.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_002_11",
+        sort: 0,
+        pageTitle: "yoyoyoyoyo",
+        image: "/images/web_game/game_007/game_007_1.jpg",
+        summary: "這裡是描述",
+        url: "www.google.com",
+        myWork: "吃飯睡覺像小豬",
+        images: [
+          "/images/web_game/game_007/game_007_1.jpg",
+          "/images/web_game/game_007/game_007_2.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_002_04",
+        sort: 0,
+        pageTitle: "yoyoyoyoyo",
+        image: "/images/web_game/game_005.png",
+        summary: "這裡是描述",
+        url: "www.google.com",
+        myWork: "吃飯睡覺像小豬",
+        images: [
+          "/images/web_game/game_005.png",
+        ]
+      },
+
+      {
+        type: "list",
+        id: "web_002_05",
+        sort: 0,
+        pageTitle: "yoyoyoyoyo",
+        image: "/images/web_game/game_004.jpg",
+        summary: "這裡是描述",
+        url: "www.google.com",
+        myWork: "吃飯睡覺像小豬",
+        images: [
+          "/images/web_game/game_004.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "web_002_06",
+        sort: 0,
+        pageTitle: "yoyoyoyoyo",
+        image: "/images/web_game/game_006.jpg",
+        summary: "這裡是描述",
+        url: "www.google.com",
+        myWork: "吃飯睡覺像小豬",
+        images: [
+          "/images/web_game/game_006.jpg",
+        ]
+      },
+    ]
+  },
+  //廣告設計圖 - banner
+  {
+    type: "gallery",
+    id: "gallery_003",
+    notInIndex: false,
+    sort: 0,
+    image: "/images/banner_design/banner_cover.jpg",
+    title: "活動圖設計",
+    summary: "各種產業的活動視覺貼圖, 將文字內容轉化為達意、富有創意和美感兼具的高品質成品。",
+    navigation: [
+      {
+        title: "Banner",
+        jumpToId: "gallery_003"
+      },
+      {
+        title:"Graphic",
+        jumpToId: "gallery_004"
       }
+    ],
+    lists: [
+      {
+        type: "list",
+        id: "banner_001_01",
+        sort: 0,
+        pageTitle: "尾牙",
+        image: "/images/banner_design/banner_001/banner_001_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/banner_design/banner_001/banner_001_cover.jpg",
+          "/images/banner_design/banner_001/banner_001_1.jpg",
+          "/images/banner_design/banner_001/banner_001_2.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "banner_001_02",
+        sort: 0,
+        pageTitle: "新年活動圖",
+        image: "/images/banner_design/banner_002/banner_002_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/banner_design/banner_002/banner_002_1.png",
+        ]
+      },
+      {
+        type: "list",
+        id: "banner_001_03",
+        sort: 0,
+        pageTitle: "USDT活動圖",
+        image: "/images/banner_design/banner_003/banner_003_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/banner_design/banner_003/banner_003_1.png",
+        ]
+      },
+      {
+        type: "list",
+        id: "banner_001_04",
+        sort: 0,
+        pageTitle: "促銷累活動圖",
+        image: "/images/banner_design/banner_004/banner_004_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/banner_design/banner_004/banner_004_1.png",
+        ]
+      },
+      {
+        type: "list",
+        id: "banner_001_05",
+        sort: 0,
+        pageTitle: "體育類 活動圖",
+        image: "/images/banner_design/banner_005/banner_005_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/banner_design/banner_005/banner_005_1.png",
+        ]
+      },
+      {
+        type: "list",
+        id: "banner_001_06",
+        sort: 0,
+        pageTitle: "電子類 活動圖",
+        image: "/images/banner_design/banner_006/banner_006_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/banner_design/banner_006/banner_006_1.png",
+        ]
+      },
+      {
+        type: "list",
+        id: "banner_001_07",
+        sort: 0,
+        pageTitle: "真人遊戲類 活動圖",
+        image: "/images/banner_design/banner_007/banner_007_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/banner_design/banner_007/banner_007_1.png",
+        ]
+      },
+      {
+        type: "list",
+        id: "banner_001_06",
+        sort: 0,
+        pageTitle: "POP-UP彈窗廣告",
+        image: "/images/banner_design/banner_008/banner_008_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/banner_design/banner_008/banner_008_1.png",
+          "/images/banner_design/banner_008/banner_008_2.png",
+          "/images/banner_design/banner_008/banner_008_3.png",
+          "/images/banner_design/banner_008/banner_008_4.png",
+        ]
+      },
+      {
+        type: "list",
+        id: "banner_001_06",
+        sort: 0,
+        pageTitle: "POP-UP彈窗廣告",
+        image: "/images/banner_design/banner_009/banner_009_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/banner_design/banner_009/banner_009_1.png",
+          "/images/banner_design/banner_009/banner_009_2.png",
+          "/images/banner_design/banner_009/banner_009_3.png",
+        ]
+      },
+    ]
+  },
+  //廣告設計圖 - EDM & 明面設計
+  {
+    type: "gallery",
+    id: "gallery_004",
+    notInIndex: false,
+    sort: 0,
+    image: "/images/graphic/graphic_cover.jpg",
+    title: "活動圖設計",
+    summary: "電子商城的EDM廣告及文宣海報設計, 將文字內容轉化為達意、富有創意和美感兼具的高品質成品。",
+    navigation: [
+      {
+        title: "Banner",
+        jumpToId: "gallery_003"
+      },
+      {
+        title:"Graphic",
+        jumpToId: "gallery_004"
+      }
+    ],
+    lists: [
+      {
+        type: "list",
+        id: "graphic_001_01",
+        sort: 0,
+        pageTitle: "社區營造 - 海報/文宣製作 (2012年)",
+        image: "/images/graphic/graphic_001/graphic_001_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/graphic/graphic_001/graphic_001_1.jpg",
+          "/images/graphic/graphic_001/graphic_001_2.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "graphic_001_02",
+        sort: 0,
+        pageTitle: "社區營造 - 海報/文宣製作 (2012年)",
+        image: "/images/graphic/graphic_002/graphic_002_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/graphic/graphic_002/graphic_002_cover.jpg",
+          "/images/graphic/graphic_002/graphic_002_1.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "graphic_001_03",
+        sort: 0,
+        pageTitle: "五分植物工作坊 - 文宣製作 (2012年)",
+        image: "/images/graphic/graphic_003/graphic_003_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/graphic/graphic_003/graphic_003_cover.jpg",
+          "/images/graphic/graphic_003/graphic_003_1.jpg",
+        ]
+      },
+      {
+        type: "list",
+        id: "edm_001_03",
+        sort: 0,
+        pageTitle: "私密青春潔浴露 (2013年)",
+        image: "/images/graphic/edm/edm_003/edm_003_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/graphic/edm/edm_003/edm_003_1.png",
+        ]
+      },
+      {
+        type: "list",
+        id: "edm_001_02",
+        sort: 0,
+        pageTitle: "E2C寶寶身體乳 (2013年)",
+        image: "/images/graphic/edm/edm_002/edm_002_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/graphic/edm/edm_002/edm_002_1.png",
+        ]
+      },
+      {
+        type: "list",
+        id: "edm_001_04",
+        sort: 0,
+        pageTitle: "美腿神器 隱形絲襪噴霧 (2013年)",
+        image: "/images/graphic/edm/edm_004/edm_004_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/graphic/edm/edm_004/edm_004_1.png",
+        ]
+      },
+      {
+        type: "list",
+        id: "edm_001_01",
+        sort: 0,
+        pageTitle: "天然橄欖油護膚嬰兒油 (2013年)",
+        image: "/images/graphic/edm/edm_001/edm_001_cover.jpg",
+        url: "",
+        myWork: "",
+        images: [
+          "/images/graphic/edm/edm_001/edm_001_1.png",
+        ]
+      },
     ]
   },
 

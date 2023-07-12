@@ -1,6 +1,18 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router';
 
-const props = defineProps<{ images: string[], url?: string, myWork?: string }>();
+
+const props = defineProps<{ images: string[], url?: string, myWork?: string, pageTitle?: string }>();
+
+const $router = useRouter();
+
+function backToPreviousOrIndex() {
+  if (history.length > 2) {
+    $router.go(-1)
+  } else {
+    $router.push('/')
+  }
+}
 
 </script>
 
@@ -11,13 +23,18 @@ const props = defineProps<{ images: string[], url?: string, myWork?: string }>()
       <div class="main-title">
         <div class="title-en">Project Details</div>
         <span></span>
-        <div class="title-tw">娛樂平台</div>
+        <div class="title-tw">{{ props.pageTitle ?? "網頁平台" }}</div>
       </div>
       <div class="describe" v-if="props.url || props.myWork">
         <div class="company_url" v-if="props.url">網址: <a :href="props.url">{{ props.url }}</a></div>
         <div class="mywork" v-if="props.myWork">開發: <span>{{ props.myWork }}</span></div>
       </div>
+      <div class="inner-page-describe">
+        <span class="describe-title">描述：</span>
+        <span class="describle-content">述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這</span>
+      </div>
       <div class="detail-content">
+
         <template v-for="(image, index) in props.images" :key="index">
           <img :src="image" alt="">
         </template>
@@ -37,7 +54,7 @@ const props = defineProps<{ images: string[], url?: string, myWork?: string }>()
         <img src="/images/project_001/project_001_15.webp" alt=""> -->
       </div>
 
-      <a href="/" class="back-btn">
+      <a @click="backToPreviousOrIndex" class="back-btn">
         <span class="back-btn-icon"><img src="/images/back-btn.svg" alt=""></span>
           Back to Index
       </a>
