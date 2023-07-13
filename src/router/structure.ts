@@ -6,6 +6,7 @@ export interface BaseData {
   summary?: string,
   notInIndex?: boolean,
   pageTitle?: string,
+  pageTitleEn?: string,
 }
 
 export interface ListData extends BaseData {
@@ -13,6 +14,7 @@ export interface ListData extends BaseData {
   images: string[],
   url?: string,
   myWork?: string,
+  description?: string
 }
 
 export interface GalleryData extends BaseData {

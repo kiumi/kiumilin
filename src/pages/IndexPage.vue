@@ -1,10 +1,27 @@
 <script lang="ts" setup>
 
 import { data } from '@/router/structure';
+import { onMounted, onUnmounted } from 'vue';
 import { RouterLink } from 'vue-router';
 
 
 const filterData = data.filter((row) => row.notInIndex !== true);
+
+function listenScroll() {
+  if (window.scrollY > 300) {
+    document.body.classList.add("scroll-over-point");
+  } else {
+    document.body.classList.remove("scroll-over-point");
+  }
+}
+
+onMounted(() => {
+  window.addEventListener("scroll", listenScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", listenScroll)
+})
 
 </script>
 

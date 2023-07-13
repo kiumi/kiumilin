@@ -2,7 +2,7 @@
 import { useRouter } from 'vue-router';
 
 
-const props = defineProps<{ images: string[], url?: string, myWork?: string, pageTitle?: string }>();
+const props = defineProps<{ images: string[], url?: string, myWork?: string, pageTitle?: string, pageTitleEn?: string, description?: string }>();
 
 const $router = useRouter();
 
@@ -21,7 +21,7 @@ function backToPreviousOrIndex() {
     <!-- 作品詳細 -->
     <div class="project-detail">
       <div class="main-title">
-        <div class="title-en">Project Details</div>
+        <div class="title-en">{{ props.pageTitleEn ?? "Project Detail" }}</div>
         <span></span>
         <div class="title-tw">{{ props.pageTitle ?? "網頁平台" }}</div>
       </div>
@@ -29,9 +29,8 @@ function backToPreviousOrIndex() {
         <div class="company_url" v-if="props.url">網址: <a :href="props.url">{{ props.url }}</a></div>
         <div class="mywork" v-if="props.myWork">開發: <span>{{ props.myWork }}</span></div>
       </div>
-      <div class="inner-page-describe">
-        <span class="describe-title">描述：</span>
-        <span class="describle-content">述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這是描述這</span>
+      <div v-if="props.description" class="inner-page-describe">
+        <span class="describle-content">{{ props.description }}</span>
       </div>
       <div class="detail-content">
 

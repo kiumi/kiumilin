@@ -2,7 +2,7 @@
 import type { ListData, GalleryData } from '@/router/structure';
 import { useRouter } from 'vue-router';
 
-const props = defineProps<{ lists: ListData[], navigation: GalleryData['navigation'], pageTitle?: string }>();
+const props = defineProps<{ lists: ListData[], navigation: GalleryData['navigation'], pageTitle?: string, pageTitleEn?: string }>();
 const $router = useRouter();
 
 function backToPreviousOrIndex() {
@@ -20,7 +20,7 @@ function backToPreviousOrIndex() {
   <div class="gallery">
     <div class="web-company">
       <div class="main-title">
-        <div class="title-en">Web Design</div>
+        <div class="title-en">{{ props.pageTitleEn ?? "Web Design" }}</div>
         <span></span>
         <div class="title-tw">{{ props.pageTitle ?? "網頁平台" }}</div>
       </div>
