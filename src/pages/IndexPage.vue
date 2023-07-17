@@ -1,33 +1,15 @@
 <script lang="ts" setup>
 
 import { data } from '@/router/structure';
-import { onMounted, onUnmounted } from 'vue';
 import { RouterLink } from 'vue-router';
 
-
 const filterData = data.filter((row) => row.notInIndex !== true);
-
-function listenScroll() {
-  if (window.scrollY > 300) {
-    document.body.classList.add("scroll-over-point");
-  } else {
-    document.body.classList.remove("scroll-over-point");
-  }
-}
-
-onMounted(() => {
-  window.addEventListener("scroll", listenScroll)
-})
-
-onUnmounted(() => {
-  window.removeEventListener("scroll", listenScroll)
-})
 
 </script>
 
 <template>
-  <div class="wrapper">
-    <header>
+  <div class="wrapper animate__animated animate__fadeIn animate__delay-03s">
+    <header class="site-nav animate__animated animate__fadeIn animate__delay-06s">
       <div class="years">2019-2023</div>
       <ul>
         <li>
@@ -43,9 +25,9 @@ onUnmounted(() => {
       <div class="index-content">
         <div class="flex">
           <div class="content-left">
-            <div class="txt-lg">作品集</div>
-            <div class="txt-md">Design Portfolio</div>
-            <div class="content-btn">
+            <div class="txt-lg animate__animated animate__fadeIn animate__delay-08s">作品集</div>
+            <div class="txt-md animate__animated animate__fadeIn animate__delay-1s">Design Portfolio</div>
+            <div class="content-btn animate__animated animate__fadeIn animate__delay-12s">
               <ul>
                 <li>WEB</li>
                 <li>UI/UX</li>
@@ -58,9 +40,9 @@ onUnmounted(() => {
               </ul>
             </div>
           </div>
-          <div class="content-right"></div>
+          <div class="content-right animate__animated animate__fadeInUp animate__delay-1s"></div>
         </div>
-        <div class="bottom-txt">
+        <div class="bottom-txt  animate__animated animate__fadeIn animate__delay-12s">
           <span>網頁設計</span>
           <span>平面視覺</span>
         </div>
@@ -71,7 +53,7 @@ onUnmounted(() => {
 
     </div>
     <div class="experience" id="experience">
-      <div class="main-title">
+      <div class="main-title animate__animated animate__fadeIn animate__delay-12s">
         <div class="title-en">Experence</div>
         <span></span>
         <div class="title-tw">工作經歷</div>
@@ -79,7 +61,7 @@ onUnmounted(() => {
 
       <div class="flex">
         <div class="exp-content">
-          <div class="time-line">
+          <div class="time-line animate__animated animate__fadeIn animate__delay-13s">
             <div class="col-sm-1">
               <div class="time-line-section">
                 <div class="time-dot"></div>
@@ -103,7 +85,7 @@ onUnmounted(() => {
               </div>
             </div>
           </div>
-          <div class="time-line">
+          <div class="time-line animate__animated animate__fadeIn animate__delay-14s">
             <div class="col-sm-1">
               <div class="time-line-section">
                 <div class="time-dot"></div>
@@ -125,7 +107,7 @@ onUnmounted(() => {
 
             </div>
           </div>
-          <div class="time-line">
+          <div class="time-line animate__animated animate__fadeIn animate__delay-15s">
             <div class="col-sm-1">
               <div class="time-line-section">
                 <div class="time-dot"></div>
@@ -148,7 +130,7 @@ onUnmounted(() => {
 
             </div>
           </div>
-          <div class="time-line">
+          <div class="time-line animate__animated animate__fadeIn animate__delay-16s">
             <div class="col-sm-1">
               <div class="time-line-section">
                 <div class="time-dot"></div>
@@ -170,8 +152,8 @@ onUnmounted(() => {
             </div>
           </div>
         </div>
-        <div class="exp-content">
-          <div class="time-line">
+        <div class="exp-content ">
+          <div class="time-line animate__animated animate__fadeIn animate__delay-13s">
             <div class="col-sm-1">
               <div class="time-line-section">
                 <div class="time-dot"></div>
@@ -197,8 +179,7 @@ onUnmounted(() => {
 
             </div>
           </div>
-
-          <div class="time-line">
+          <div class="time-line animate__animated animate__fadeIn animate__delay-14s">
             <div class="col-sm-1">
               <div class="time-line-section">
                 <div class="time-dot"></div>
@@ -223,7 +204,7 @@ onUnmounted(() => {
               </div>
             </div>
           </div>
-          <div class="time-line">
+          <div class="time-line animate__animated animate__fadeIn animate__delay-15s">
             <div class="col-sm-1">
               <div class="time-line-section">
                 <div class="time-dot"></div>

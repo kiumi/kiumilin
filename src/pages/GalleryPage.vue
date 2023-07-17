@@ -56,6 +56,7 @@ function backToPreviousOrIndex() {
           Back to Index
       </a>
     </div>
+    <a href="#" class="bottm-hand"><img src="/images/bottom-hand.png" alt=""></a>
 
     <!-- <nav >
       <div><RouterLink to="/">Index</RouterLink></div>
