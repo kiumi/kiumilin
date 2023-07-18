@@ -15,7 +15,7 @@ const filterData = data.filter((row) => row.notInIndex !== true);
         <li>
           <a href="#">HOME</a>
         </li>
-        <li><a class="scrollto" href="#experience">EXPERENCE</a></li>
+        <li><a class="scrollto" href="#experience">EXPERIENCE</a></li>
         <li><a class="scrollto" href="#skill">SKILL</a></li>
         <li><a class="scrollto" href="#protfolio">PORTFOLIO</a></li>
         <li><a class="scrollto" href="#contact">CONTACT</a></li>
@@ -52,7 +52,7 @@ const filterData = data.filter((row) => row.notInIndex !== true);
 
 
     </div>
-    <div class="experience" id="experience">
+    <div class="experience" id="experience" v-scroll-over="{ class: 'add-class-name', offsetY: 200 }">
       <div class="main-title animate__animated animate__fadeIn animate__delay-12s">
         <div class="title-en">Experence</div>
         <span></span>

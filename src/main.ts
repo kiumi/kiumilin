@@ -5,9 +5,11 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
+import vScrollPlugin from './plugins/vScroll'
 
 const app = createApp(App)
 
+app.use(vScrollPlugin)
 app.use(createPinia())
 app.use(router)
 

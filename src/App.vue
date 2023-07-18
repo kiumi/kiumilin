@@ -17,6 +17,8 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener("scroll", listenScroll)
 })
+
+
 </script>
 
 <template>

@@ -22,8 +22,6 @@ const routes = data.reduce<RouteRecordRaw[]>((acc, row) => {
   return [...acc, ...listToRoute(row)];
 }, [])
 
-console.log(routes);
-
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
