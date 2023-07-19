@@ -1096,3 +1096,52 @@ body:not(.scroll-over-point) .site-nav {
 body.scroll-over-point .experience {
   animation-delay: 1s;
 }
+
+
+.su-main {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.su-grandparent {
+  display: flex;
+  width: 100%;  
+  height: 100%;
+  align-items: center;
+}
+
+.su-parent {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: center;
+
+  .su-child-left {
+    flex: 1 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .su-child-right {
+    flex: 1 50%;
+    height: 70vh;
+    background-image: url(images/index-pic.png);
+    background-size: contain;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+  }
+
+  .su-text-content {
+    // height: 300px;
+    background: green;
+  }
+
+  .su-image-content {
+
+  }
+}
