@@ -8,13 +8,14 @@ const vScrollPlugin: Plugin = {
     const scrollAbove = new CustomEvent("scroll-above");
 
     window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY
-      
+      const windowOutHeight = window.outerHeight
+
       registers.forEach(row => {
         const [el, config] = row;
-        const top = el.scrollTop + (config.offsetY ?? 0)
+        const rect = el.getBoundingClientRect();
+        const top = rect.top + (config.offsetY ?? 0)
 
-        el.dispatchEvent(top <= scrollY ? scrollBelow : scrollAbove);
+        el.dispatchEvent(top <= windowOutHeight ? scrollBelow : scrollAbove);
       })
     });
 
