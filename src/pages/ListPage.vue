@@ -20,10 +20,13 @@ function backToPreviousOrIndex() {
   <div class="list">
     <!-- 作品詳細 -->
     <div class="project-detail">
-      <div class="main-title">
-        <div class="title-en">{{ props.pageTitleEn ?? "Project Detail" }}</div>
-        <span></span>
-        <div class="title-tw">{{ props.pageTitle ?? "網頁平台" }}</div>
+      <div class="main-title inner-page-title">
+        <div class="title">
+          <div class="title-en">{{ props.pageTitleEn ?? "Project Detail" }}</div>
+          <span></span>
+          <div class="title-tw">{{ props.pageTitle ?? "網頁平台" }}</div>
+        </div>
+        <a @click="backToPreviousOrIndex" class="back-index-btn">Back to Index</a>
       </div>
       <div class="describe" v-if="props.url || props.myWork">
         <div class="company_url" v-if="props.url">網址: <a :href="props.url" target="_blank">{{ props.url }}</a></div>

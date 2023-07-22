@@ -103,6 +103,23 @@ export const data: DiverseData = [
       "/images/project_003/project_003_21.webp",
     ]
   },
+  {
+    type: "list",
+    id: "web_029",
+    sort: 0,
+    pageTitle:"1111人力銀行",
+    summary:"提供求職服務的1111人力銀行，此視覺為平台新版面。\
+    主要工作範疇為前端切版，在版面模組有不同的排列方式，\
+    以及移動端的呈現，故在切版執行時這都是重要的考量因素。",
+    image: "/images/web_company/web_029.webp",
+    url: "https://www.1111.com.tw",
+    images: [
+      "/images/web_company/web_029.webp",
+      "/images/web_company/web_029_1.webp",
+      "/images/web_company/web_029_2.webp",
+      "/images/web_company/web_029_3.webp",
+    ]
+  },
   // 網頁設計作品
   {
     type: "gallery",
@@ -123,6 +140,21 @@ export const data: DiverseData = [
       }
     ],
     lists: [
+      {
+        type: "list",
+        id: "web_029",
+        sort: 0,
+        image: "/images/web_company/web_029.webp",
+        pageTitle:"1111人力銀行",
+        url: "https://www.1111.com.tw",
+        myWork: "切版",
+        images: [
+          "/images/web_company/web_029.webp",
+          "/images/web_company/web_029_1.webp",
+          "/images/web_company/web_029_2.webp",
+          "/images/web_company/web_029_3.webp",
+        ]
+      },
       {
         type: "list",
         id: "web_001",

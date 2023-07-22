@@ -1,15 +1,24 @@
 <script lang="ts" setup>
 
+import { ref, unref } from 'vue';
 import { data } from '@/router/structure';
 import { RouterLink } from 'vue-router';
 
 const filterData = data.filter((row) => row.notInIndex !== true);
+const nav = ref<HTMLInputElement>();
+
+function jumpTo(to: string) {
+  const n = unref(nav);
+  n && (n.checked = false);
+
+  window.location.href = to;
+}
 
 </script>
 
 <template>
   <div class="wrapper animate__animated animate__fadeIn animate__delay-03s">
-    <header class="site-nav animate__animated animate__fadeIn animate__delay-06s">
+    <navigation class="site-nav animate__animated animate__fadeIn animate__delay-06s">
       <div class="years">2019-2023</div>
       <ul>
         <li>
@@ -17,62 +26,74 @@ const filterData = data.filter((row) => row.notInIndex !== true);
         </li>
         <li><a class="scrollto" href="#experience">EXPERIENCE</a></li>
         <li><a class="scrollto" href="#skill">SKILL</a></li>
-        <li><a class="scrollto" href="#protfolio">PORTFOLIO</a></li>
+        <li><a class="scrollto" href="#project">PORTFOLIO</a></li>
         <li><a class="scrollto" href="#contact">CONTACT</a></li>
       </ul>
-    </header>
+    </navigation>
+
+    <!-- 手機版選單 -->
+    <input ref="nav" id="toggle" type="checkbox"/>
+    <label class="hamburger" for="toggle">
+      <div class="top"></div>
+      <div class="meat"></div>
+      <div class="bottom"></div>
+    </label>
+    <div class="mobile-nav">
+      <div class="nav-wrapper">
+        <nav>
+          <a @click="jumpTo('#')">HOME</a>
+          <a @click="jumpTo('#experience')">EXPERIENCE</a>
+          <a @click="jumpTo('#skill')">SKILL</a>
+          <a @click="jumpTo('#project')">PORTFOLIO</a>
+          <a @click="jumpTo('#contact')">CONTACT</a>
+        </nav>
+      </div>
+    </div>
     <div class="su-main">
       <div class="index " id="index">
         <div class="su-grandparent">
           <div class="su-parent">
             <div class="su-child-left">
               <div class="su-text-content">
-                content
+                <div class="txt-lg animate__animated animate__fadeIn animate__delay-08s">作品集</div>
+                <div class="txt-md animate__animated animate__fadeIn animate__delay-1s">Design Portfolio</div>
+                <div class="content-btn animate__animated animate__fadeIn animate__delay-12s">
+                  <ul>
+                    <li>WEB</li>
+                    <li>UI/UX</li>
+                    <li>BANNER</li>
+                  </ul>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS/SCSS</li>
+                    <li>JQUERY</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="su-child-right">
               <div class="su-image-content">
               </div>
             </div>
-          </div>
-        </div>
-        <div class="index-content">
-          <!-- <div class="flex">
-            <div class="content-left">
-              <div class="txt-lg animate__animated animate__fadeIn animate__delay-08s">作品集</div>
-              <div class="txt-md animate__animated animate__fadeIn animate__delay-1s">Design Portfolio</div>
-              <div class="content-btn animate__animated animate__fadeIn animate__delay-12s">
-                <ul>
-                  <li>WEB</li>
-                  <li>UI/UX</li>
-                  <li>BANNER</li>
-                </ul>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS/SCSS</li>
-                  <li>JQUERY</li>
-                </ul>
-              </div>
+            <div class="bottom-txt  animate__animated animate__fadeIn animate__delay-12s">
+              <span>網頁設計</span>
+              <span>平面視覺</span>
             </div>
-            <div class="content-right animate__animated animate__fadeInUp animate__delay-1s"></div>
-          </div> -->
-          <div class="bottom-txt  animate__animated animate__fadeIn animate__delay-12s">
-            <span>網頁設計</span>
-            <span>平面視覺</span>
           </div>
         </div>
-  
+
+
         <a class="arrow-down" href="#experience"><img src="/../images/arrow-down.svg"></a>
-  
-  
+
+
       </div>
       <div class="experience" id="experience" >
-        <div class="main-title animate__animated animate__fadeIn animate__delay-12s">
-          <div class="title-en">Experence</div>
+        <div class="main-title animate__animated animate__fadeIn animate__delay-12s"  v-scroll-over="{ class: 'animate__delay-50s', offsetY: 0 }">
+          <div class="title-en">Experience</div>
           <span></span>
           <div class="title-tw">工作經歷</div>
         </div>
-  
+
         <div class="flex">
           <div class="exp-content">
             <div class="time-line animate__animated animate__fadeIn animate__delay-13s">
@@ -118,7 +139,7 @@ const filterData = data.filter((row) => row.notInIndex !== true);
                     <li>使用Ｈtml、css完成網頁切端切版, 含響應式裝置</li>
                   </ul>
                 </div>
-  
+
               </div>
             </div>
             <div class="time-line animate__animated animate__fadeIn animate__delay-15s">
@@ -141,7 +162,7 @@ const filterData = data.filter((row) => row.notInIndex !== true);
                     <li>依據設計師網頁設計稿(電腦版) 做響應式延伸, 進行前端切版, 加入小動畫增添操作豐富度與體感</li>
                   </ul>
                 </div>
-  
+
               </div>
             </div>
             <div class="time-line animate__animated animate__fadeIn animate__delay-16s">
@@ -190,7 +211,7 @@ const filterData = data.filter((row) => row.notInIndex !== true);
                     <li>Git版本控管</li>
                   </ul>
                 </div>
-  
+
               </div>
             </div>
             <div class="time-line animate__animated animate__fadeIn animate__delay-14s">
@@ -243,7 +264,7 @@ const filterData = data.filter((row) => row.notInIndex !== true);
           </div>
         </div>
       </div>
-  
+
       <!-- Skill -->
       <div class="skills" id="skill" v-scroll-over="{ class: 'animate-class', offsetY: 0 }">
         <div class="main-title">
@@ -267,7 +288,7 @@ const filterData = data.filter((row) => row.notInIndex !== true);
               </ul>
             </div>
           </div>
-  
+
           <div class="skill-items">
             <div class="info-top">
               <div class="title">使用者介面</div>
@@ -284,7 +305,7 @@ const filterData = data.filter((row) => row.notInIndex !== true);
               </ul>
             </div>
           </div>
-  
+
           <div class="skill-items">
             <div class="info-top">
               <div class="title">視覺設計</div>
@@ -299,7 +320,7 @@ const filterData = data.filter((row) => row.notInIndex !== true);
           </div>
         </div>
       </div>
-  
+
       <!--Project -->
       <div class="project" id="project">
         <div class="main-title">
@@ -316,7 +337,7 @@ const filterData = data.filter((row) => row.notInIndex !== true);
             <div class="info-bottom">{{ row.summary }}</div>
             <div class="more-btn">完整介紹<span><img src="/images/more-btn.svg" alt=""></span></div>
           </RouterLink>
-  
+
           <!-- <a href="#" class="project-items">
             <div class="project-img"><img src="/images/project_001.jpg" alt=""></div>
             <div class="info-top">
@@ -325,16 +346,16 @@ const filterData = data.filter((row) => row.notInIndex !== true);
             <div class="info-bottom">
               Slot Game是以電子為產品為主的娛樂服務平台。以響應式裝置方式開發, 特別的是在手機裝置下,
               是以手遊APP概念做為開發理念, 將手機端以橫向的設計來達到用戶玩手遊感的真實感。 <br /><br />
-  
+
               我在專案裡負責網站的UIUX設計, 在視覺上採用暗色系, 搭配元素繽紛的色調, 試圖營造輕鬆、
               釋放壓力、愉快的氛圍, 讓使用者能沈靜在娛樂的情境之中。
             </div>
             <div class="more-btn">完整介紹<span><img src="/images/more-btn.svg" alt=""></span></div>
           </a> -->
-  
+
         </div>
       </div>
-  
+
       <!-- CONTACT -->
       <div class="contact" id="contact">
         <div class="contact-info">更多資訊 歡迎聯繫</div>
