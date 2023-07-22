@@ -55,7 +55,7 @@ function jumpTo(to: string) {
           <div class="su-parent">
             <div class="su-child-left">
               <div class="su-text-content">
-                <div class="txt-lg animate__animated animate__fadeIn animate__delay-08s">作品集</div>
+                <div class="txt-lg animate__animated animate__fadeInUp animate__delay-08s">作品集</div>
                 <div class="txt-md animate__animated animate__fadeIn animate__delay-1s">Design Portfolio</div>
                 <div class="content-btn animate__animated animate__fadeIn animate__delay-12s">
                   <ul>
@@ -88,7 +88,7 @@ function jumpTo(to: string) {
 
       </div>
       <div class="experience" id="experience" >
-        <div class="main-title animate__animated animate__fadeIn animate__delay-12s"  v-scroll-over="{ class: 'animate__delay-50s', offsetY: 0 }">
+        <div class="main-title animate__animated animate__delay-12s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 200 }">
           <div class="title-en">Experience</div>
           <span></span>
           <div class="title-tw">工作經歷</div>

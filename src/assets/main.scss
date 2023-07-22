@@ -407,6 +407,7 @@ body {
   }
 }
 .main-title {
+  opacity: 0;
   display: flex;
   align-items: baseline;
   position: relative;
@@ -1270,3 +1271,7 @@ body.scroll-over-point .experience {
 }
 
 
+.animate__forwards {
+  -webkit-animation-fill-mode: forwards !important;
+  animation-fill-mode: forwards !important;
+}

@@ -1,5 +1,11 @@
-import type { Plugin } from 'vue';
+import type { DirectiveBinding, Plugin } from 'vue';
 
+
+interface Options {
+  class: string,
+  offsetY?: number,
+  restorable?: boolean,
+}
 
 const vScrollPlugin: Plugin = {
   install(app) {
@@ -20,19 +26,21 @@ const vScrollPlugin: Plugin = {
     });
 
     app.directive('scroll-over', {
-      mounted(el: HTMLElement, binding) {
+      mounted(el: HTMLElement, binding: DirectiveBinding<Options>) {
         el.addEventListener("scroll-below", () => {
-          el.classList.add(binding.value.class);
+          el.classList.add(...binding.value.class.split(" "));
         })
 
-        el.addEventListener("scroll-above", () => {
-          el.classList.remove(binding.value.class);
-        })
+        if (binding.value.restorable === true) {
+          el.addEventListener("scroll-above", () => {
+            el.classList.remove(...binding.value.class.split(" "));
+          })
+        }
   
         registers.push([el, binding.value]);
       },
-      unmounted(el) {
-        registers = registers.filter(row => row !== el);
+      unmounted(el: HTMLElement) {
+        registers = registers.filter(row => row[0] !== el);
       }
     })
   }
