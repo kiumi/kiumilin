@@ -20,7 +20,7 @@ function backToPreviousOrIndex() {
   <div class="list">
     <!-- 作品詳細 -->
     <div class="project-detail">
-      <div class="main-title inner-page-title">
+      <div class="main-title inner-page-title animate__animated animate__fadeIn animate__delay-08s">
         <div class="title">
           <div class="title-en">{{ props.pageTitleEn ?? "Project Detail" }}</div>
           <span></span>
@@ -35,7 +35,7 @@ function backToPreviousOrIndex() {
       <div v-if="props.description" class="inner-page-describe">
         <span class="describle-content">{{ props.description }}</span>
       </div>
-      <div class="detail-content">
+      <div class="detail-content animate__animated animate__fadeIn animate__delay-12s">
 
         <template v-for="(image, index) in props.images" :key="index">
           <img :src="image" alt="">

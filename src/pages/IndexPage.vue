@@ -17,8 +17,8 @@ function jumpTo(to: string) {
 </script>
 
 <template>
-  <div class="wrapper animate__animated animate__fadeIn animate__delay-03s">
-    <navigation class="site-nav animate__animated animate__fadeIn animate__delay-06s">
+  <div class="wrapper">
+    <navigation class="site-nav animate__animated animate__fadeIn animate__delay-08s">
       <div class="years">2019-2023</div>
       <ul>
         <li>
@@ -55,9 +55,9 @@ function jumpTo(to: string) {
           <div class="su-parent">
             <div class="su-child-left">
               <div class="su-text-content">
-                <div class="txt-lg animate__animated animate__fadeInUp animate__delay-08s">作品集</div>
-                <div class="txt-md animate__animated animate__fadeIn animate__delay-1s">Design Portfolio</div>
-                <div class="content-btn animate__animated animate__fadeIn animate__delay-12s">
+                <div class="txt-lg animate__animated animate__fadeIn animate__delay-12s">作品集</div>
+                <div class="txt-md animate__animated animate__fadeIn animate__delay-14s">Design Portfolio</div>
+                <div class="content-btn animate__animated animate__fadeIn animate__delay-17s">
                   <ul>
                     <li>WEB</li>
                     <li>UI/UX</li>
@@ -88,7 +88,7 @@ function jumpTo(to: string) {
 
       </div>
       <div class="experience" id="experience" >
-        <div class="main-title animate__animated animate__delay-12s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 200 }">
+        <div class="main-title animate__animated animate__delay-06s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
           <div class="title-en">Experience</div>
           <span></span>
           <div class="title-tw">工作經歷</div>
@@ -96,7 +96,7 @@ function jumpTo(to: string) {
 
         <div class="flex">
           <div class="exp-content">
-            <div class="time-line animate__animated animate__fadeIn animate__delay-13s">
+            <div class="time-line-group animate__animated animate__delay-08s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
               <div class="col-sm-1">
                 <div class="time-line-section">
                   <div class="time-dot"></div>
@@ -120,7 +120,7 @@ function jumpTo(to: string) {
                 </div>
               </div>
             </div>
-            <div class="time-line animate__animated animate__fadeIn animate__delay-14s">
+            <div class="time-line-group animate__animated animate__delay-12s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
               <div class="col-sm-1">
                 <div class="time-line-section">
                   <div class="time-dot"></div>
@@ -142,7 +142,7 @@ function jumpTo(to: string) {
 
               </div>
             </div>
-            <div class="time-line animate__animated animate__fadeIn animate__delay-15s">
+            <div class="time-line-group animate__animated animate__delay-16s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
               <div class="col-sm-1">
                 <div class="time-line-section">
                   <div class="time-dot"></div>
@@ -165,7 +165,7 @@ function jumpTo(to: string) {
 
               </div>
             </div>
-            <div class="time-line animate__animated animate__fadeIn animate__delay-16s">
+            <div class="time-line-group animate__animated animate__delay-17s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
               <div class="col-sm-1">
                 <div class="time-line-section">
                   <div class="time-dot"></div>
@@ -188,7 +188,7 @@ function jumpTo(to: string) {
             </div>
           </div>
           <div class="exp-content ">
-            <div class="time-line animate__animated animate__fadeIn animate__delay-13s">
+            <div class="time-line-group animate__animated animate__delay-08s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
               <div class="col-sm-1">
                 <div class="time-line-section">
                   <div class="time-dot"></div>
@@ -214,7 +214,7 @@ function jumpTo(to: string) {
 
               </div>
             </div>
-            <div class="time-line animate__animated animate__fadeIn animate__delay-14s">
+            <div class="time-line-group animate__animated animate__delay-12s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
               <div class="col-sm-1">
                 <div class="time-line-section">
                   <div class="time-dot"></div>
@@ -239,7 +239,7 @@ function jumpTo(to: string) {
                 </div>
               </div>
             </div>
-            <div class="time-line animate__animated animate__fadeIn animate__delay-15s">
+            <div class="time-line-group animate__animated animate__delay-16s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
               <div class="col-sm-1">
                 <div class="time-line-section">
                   <div class="time-dot"></div>
@@ -266,14 +266,14 @@ function jumpTo(to: string) {
       </div>
 
       <!-- Skill -->
-      <div class="skills" id="skill" v-scroll-over="{ class: 'animate-class', offsetY: 0 }">
-        <div class="main-title">
+      <div class="skills" id="skill">
+        <div class="main-title animate__animated animate__delay-06s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 400 }">
           <div class="title-en">Skills</div>
           <span></span>
           <div class="title-tw">工作技能</div>
         </div>
         <div class="flex skills-content">
-          <div class="skill-items">
+          <div class="skill-items animate__animated animate__delay-12s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 400 }">
             <div class="info-top">
               <div class="title">前端開發</div>
               <span>Front-End Development</span>
@@ -289,7 +289,7 @@ function jumpTo(to: string) {
             </div>
           </div>
 
-          <div class="skill-items">
+          <div class="skill-items animate__animated animate__delay-16s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 400 }">
             <div class="info-top">
               <div class="title">使用者介面</div>
               <span>UI/UX Designt</span>
@@ -306,7 +306,7 @@ function jumpTo(to: string) {
             </div>
           </div>
 
-          <div class="skill-items">
+          <div class="skill-items animate__animated animate__delay-17s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 400 }">
             <div class="info-top">
               <div class="title">視覺設計</div>
               <span>Visual Design</span>
@@ -323,13 +323,13 @@ function jumpTo(to: string) {
 
       <!--Project -->
       <div class="project" id="project">
-        <div class="main-title">
+        <div class="main-title animate__animated animate__delay-06s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
           <div class="title-en">Project</div>
           <span></span>
           <div class="title-tw">專案介紹</div>
         </div>
         <div class="flex project-content">
-          <RouterLink v-for="row in filterData" :key="row.id" :to="{ name: row.id }" class="project-items" target="_blank">
+          <RouterLink v-for="row in filterData" :key="row.id" :to="{ name: row.id }" class="project-items animate__animated animate__delay-12s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 500 }"  target="_blank">
             <div class="project-img"><img :src="row.image" alt=""></div>
             <div class="info-top">
               <div class="title">{{ row.title }}</div>
@@ -338,20 +338,6 @@ function jumpTo(to: string) {
             <div class="more-btn">完整介紹<span><img src="/images/more-btn.svg" alt=""></span></div>
           </RouterLink>
 
-          <!-- <a href="#" class="project-items">
-            <div class="project-img"><img src="/images/project_001.jpg" alt=""></div>
-            <div class="info-top">
-              <div class="title">Slot Game Web & Mobile UI/UX Design</div>
-            </div>
-            <div class="info-bottom">
-              Slot Game是以電子為產品為主的娛樂服務平台。以響應式裝置方式開發, 特別的是在手機裝置下,
-              是以手遊APP概念做為開發理念, 將手機端以橫向的設計來達到用戶玩手遊感的真實感。 <br /><br />
-
-              我在專案裡負責網站的UIUX設計, 在視覺上採用暗色系, 搭配元素繽紛的色調, 試圖營造輕鬆、
-              釋放壓力、愉快的氛圍, 讓使用者能沈靜在娛樂的情境之中。
-            </div>
-            <div class="more-btn">完整介紹<span><img src="/images/more-btn.svg" alt=""></span></div>
-          </a> -->
 
         </div>
       </div>

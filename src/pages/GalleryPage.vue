@@ -19,7 +19,7 @@ function backToPreviousOrIndex() {
 <template>
   <div class="gallery">
     <div class="web-company">
-      <div class="main-title inner-page-title">
+      <div class="main-title animate__animated animate__fadeIn animate__delay-08s">
         <div class="title">
           <div class="title-en">{{ props.pageTitleEn ?? "Web Design" }}</div>
           <span></span>
@@ -40,7 +40,7 @@ function backToPreviousOrIndex() {
         </div>
       </template>
 
-      <div class="web-content">
+      <div class="web-content animate__animated animate__fadeIn animate__delay-08s">
         <template v-for="row in props.lists" :key="row.id">
           <RouterLink :to="{ name: row.id }" class="items" target="_blank">
             <img :src="row.image" alt="">
