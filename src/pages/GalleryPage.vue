@@ -14,6 +14,7 @@ function backToPreviousOrIndex() {
   }
 }
 
+
 </script>
 
 
@@ -43,7 +44,7 @@ function backToPreviousOrIndex() {
       <div class="web-content animate__animated animate__fadeIn animate__delay-08s">
         <template v-for="row in props.lists" :key="row.id">
           <RouterLink :to="{ name: row.id }" class="items" target="_blank">
-            <img :src="toBaseUrl(row.image)" alt="">
+            <img :src="row.image" alt="">
           </RouterLink>
         </template>
         <!-- <a href="#" class="items"><img src="/images/web_company/web_001.jpg" alt=""></a>
