@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
-
+import { toBaseUrl } from '@/utilities';
 
 const props = defineProps<{ images: string[], url?: string, myWork?: string, pageTitle?: string, pageTitleEn?: string, description?: string }>();
 
@@ -13,7 +13,6 @@ function backToPreviousOrIndex() {
     $router.push('/')
   }
 }
-
 </script>
 
 <template>
@@ -38,7 +37,7 @@ function backToPreviousOrIndex() {
       <div class="detail-content animate__animated animate__fadeIn animate__delay-12s">
 
         <template v-for="(image, index) in props.images" :key="index">
-          <img :src="image" alt="">
+          <img :src="toBaseUrl(image)" alt="">
         </template>
         <!-- <img src="/images/project_001/project_001_2.webp" alt="">
         <img src="/images/project_001/project_001_3.webp" alt="">
