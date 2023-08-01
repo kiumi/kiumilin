@@ -58,7 +58,7 @@ export const data: DiverseData = [
     type: "list",
     id: "project_002",
     sort: 0,
-    image: "images/project_002/project_002_1.webp",
+    image: "/images/project_002/project_002_1.webp",
     title: "Module Mobile UI Design 模組化平台",
     pageTitle: "手機版-模組化UI設計",
     summary:"以模組化開發的娛樂型平台，讓您快速選擇元件模組建立一個平台為開發理念。統整平台功能與制定完整的流程架構, 梳理各項功能後, 將各功能做成不同視覺的元件。 \
