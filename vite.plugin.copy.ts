@@ -18,6 +18,8 @@ export const copy404 = () => {
       const notFoundHtmlPath = resolve(__dirname, config.build.outDir, "404.html")
 
       await doCopy(indexHtmlPath, notFoundHtmlPath); 
+
+      console.log("copy index.html to 404.html");
     }
   } as Plugin
 }
