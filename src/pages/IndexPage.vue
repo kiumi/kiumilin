@@ -3,6 +3,7 @@
 import { ref, unref } from 'vue';
 import { data } from '@/router/structure';
 import { RouterLink } from 'vue-router';
+import { toBaseUrl } from '@/utilities';
 
 const filterData = data.filter((row) => row.notInIndex !== true);
 const nav = ref<HTMLInputElement>();
@@ -330,7 +331,7 @@ function jumpTo(to: string) {
         </div>
         <div class="flex project-content">
           <RouterLink v-for="row in filterData" :key="row.id" :to="{ name: row.id }" class="project-items animate__animated animate__delay-12s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 500 }"  target="_blank">
-            <div class="project-img"><img :src="row.image" alt=""></div>
+            <div class="project-img"><img :src="toBaseUrl(row.image)" alt=""></div>
             <div class="info-top">
               <div class="title">{{ row.title }}</div>
             </div>
