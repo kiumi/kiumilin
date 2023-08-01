@@ -928,8 +928,4 @@ export const data: DiverseData = [
       },
     ]
   },
-
 ]
-
-
-console.log(data);
