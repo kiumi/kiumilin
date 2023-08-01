@@ -19,7 +19,7 @@ function backToPreviousOrIndex() {
 <template>
   <div class="gallery">
     <div class="web-company">
-      <div class="main-title animate__animated animate__fadeIn animate__delay-08s">
+      <div class="inner-page-title animate__animated animate__fadeIn animate__delay-08s">
         <div class="title">
           <div class="title-en">{{ props.pageTitleEn ?? "Web Design" }}</div>
           <span></span>
@@ -28,11 +28,10 @@ function backToPreviousOrIndex() {
         <a @click="backToPreviousOrIndex" class="back-index-btn">Back to Index</a>
       </div>
 
-
-      <template v-if="props.mobile-navigation && props.mobile-navigation.length">
+      <template v-if="props.navigation && props.navigation.length">
         <!-- 切換頁籤 -->
         <div class="tab-list">
-          <template v-for="(row, index) in props.mobile-navigation" :key="index">
+          <template v-for="(row, index) in props.navigation" :key="index">
             <RouterLink :to="{ name: row.jumpToId }" class="tab" active-class="active">
               {{ row.title }}
             </RouterLink>

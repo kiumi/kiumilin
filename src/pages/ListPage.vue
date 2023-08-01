@@ -20,7 +20,7 @@ function backToPreviousOrIndex() {
   <div class="list">
     <!-- 作品詳細 -->
     <div class="project-detail">
-      <div class="main-title inner-page-title animate__animated animate__fadeIn animate__delay-08s">
+      <div class="inner-page-title animate__animated animate__fadeIn animate__delay-08s">
         <div class="title">
           <div class="title-en">{{ props.pageTitleEn ?? "Project Detail" }}</div>
           <span></span>

@@ -83,7 +83,7 @@ function jumpTo(to: string) {
         </div>
 
 
-        <a class="arrow-down" href="#experience"><img src="/../images/arrow-down.svg"></a>
+        <a class="arrow-down" href="#experience"><img src="/images/arrow-down.svg"></a>
 
 
       </div>
