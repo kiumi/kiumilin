@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { ListData, GalleryData } from '@/router/structure';
-import { toBaseUrl } from '@/utilities';
+import { metaImport } from '@/utilities';
 import { useRouter } from 'vue-router';
 
 const props = defineProps<{ lists: ListData[], navigation: GalleryData['navigation'], pageTitle?: string, pageTitleEn?: string }>();
