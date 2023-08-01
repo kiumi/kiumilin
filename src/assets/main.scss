@@ -613,7 +613,7 @@ body {
     top: 0;
     width: 1000px;
     height: 1000px;
-    background: url(images/gradient.png) no-repeat;
+    background: url(/images/gradient.png) no-repeat;
     z-index: -1;
   }
   &:after {
@@ -710,7 +710,7 @@ body {
 
 .content-right {
   flex: 1;
-  background: url(images/index-pic.png) no-repeat;
+  background: url(/images/index-pic.png) no-repeat;
   background-size: contain;
   width: 50%;
   height: 790px;
@@ -782,7 +782,7 @@ body {
   .su-child-right {
     flex: 1 50%;
     height: 70vh;
-    background-image: url(images/index-pic.png);
+    background-image: url(/images/index-pic.png);
     background-size: contain;
     background-position: 10px center;
     background-repeat: no-repeat;
