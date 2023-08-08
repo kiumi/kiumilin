@@ -522,6 +522,7 @@ export const data: DiverseData = [
           resolveImageUrl("/images/project_002/project_002_3.webp"),
           resolveImageUrl("/images/project_002/project_002_4.webp"),
           resolveImageUrl("/images/project_002/project_002_5.webp"),
+          resolveImageUrl("/images/project_002/project_002_6.webp"),
         ]
       },
       {
