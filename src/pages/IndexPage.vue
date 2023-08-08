@@ -225,7 +225,7 @@ function jumpTo(to: string) {
                   <span class="job-title">網頁前端設計師</span>
                   <span>樂夠科技有限公司 2018 - 2022</span>
                 </div>
-                <div class="info-introduction">簡介: 主要為多樣版網開發站 / 模組化功能型平台/ UI、UX視覺設計/ 前端切版 </div>
+                <div class="info-introduction">簡介: 主要為多樣版網頁開發 / 模組化功能型平台/ UI、UX視覺設計/ 前端切版 </div>
                 <div class="info-bottom">
                   <ul>
                     <li>設計網站視覺, 製作符合平台調性的視覺風格</li>
