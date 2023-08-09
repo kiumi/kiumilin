@@ -810,8 +810,6 @@ export const data: DiverseData = [
           resolveImageUrl("/images/banner_design/banner_001/banner_001_2.webp"),
         ]
       },
-
-
       {
         type: "list",
         id: "banner_001_09",
