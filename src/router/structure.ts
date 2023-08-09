@@ -700,32 +700,7 @@ export const data: DiverseData = [
       }
     ],
     lists: [
-      {
-        type: "list",
-        id: "banner_001_01",
-        sort: 0,
-        pageTitle: "尾牙場佈-看板設計",
-        image: resolveImageUrl("/images/banner_design/banner_001/banner_001_cover.webp"),
-        url: "",
-        myWork: "",
-        images: [
-          resolveImageUrl("/images/banner_design/banner_001/banner_001_cover.webp"),
-          resolveImageUrl("/images/banner_design/banner_001/banner_001_1.webp"),
-          resolveImageUrl("/images/banner_design/banner_001/banner_001_2.webp"),
-        ]
-      },
-      {
-        type: "list",
-        id: "banner_001_02",
-        sort: 0,
-        pageTitle: "新年活動圖",
-        image: resolveImageUrl("/images/banner_design/banner_002/banner_002_cover.webp"),
-        url: "",
-        myWork: "",
-        images: [
-          resolveImageUrl("/images/banner_design/banner_002/banner_002_1.webp"),
-        ]
-      },
+
       {
         type: "list",
         id: "banner_001_03",
@@ -736,6 +711,28 @@ export const data: DiverseData = [
         myWork: "",
         images: [
           resolveImageUrl("/images/banner_design/banner_003/banner_003_1.webp"),
+        ]
+      },
+      {
+        type: "list",
+        id: "banner_001_08",
+        sort: 0,
+        pageTitle: "POP-UP彈窗廣告",
+        image: resolveImageUrl("/images/banner_design/banner_008/banner_008_cover.webp"),
+        url: "",
+        myWork: "",
+        images: [
+          resolveImageUrl("/images/banner_design/banner_008/banner_008_1.webp"),
+          resolveImageUrl("/images/banner_design/banner_008/banner_008_2.webp"),
+          resolveImageUrl("/images/banner_design/banner_008/banner_008_3.webp"),
+          resolveImageUrl("/images/banner_design/banner_008/banner_008_4.webp"),
+          resolveImageUrl("/images/banner_design/gif/gif-title.png"),
+          [
+            resolveImageUrl("/images/banner_design/gif/ad_001.gif"),
+            resolveImageUrl("/images/banner_design/gif/ad_002.gif"),
+            resolveImageUrl("/images/banner_design/gif/ad_003.gif"),
+            resolveImageUrl("/images/banner_design/gif/ad_004.gif"),
+          ],
         ]
       },
       {
@@ -752,14 +749,14 @@ export const data: DiverseData = [
       },
       {
         type: "list",
-        id: "banner_001_05",
+        id: "banner_001_07",
         sort: 0,
-        pageTitle: "體育類 活動圖",
-        image: resolveImageUrl("/images/banner_design/banner_005/banner_005_cover.webp"),
+        pageTitle: "真人遊戲類 活動圖",
+        image: resolveImageUrl("/images/banner_design/banner_007/banner_007_cover.webp"),
         url: "",
         myWork: "",
         images: [
-          resolveImageUrl("/images/banner_design/banner_005/banner_005_1.webp"),
+          resolveImageUrl("/images/banner_design/banner_007/banner_007_1.webp"),
         ]
       },
       {
@@ -774,38 +771,47 @@ export const data: DiverseData = [
           resolveImageUrl("/images/banner_design/banner_006/banner_006_1.webp"),
         ]
       },
+
       {
         type: "list",
-        id: "banner_001_07",
+        id: "banner_001_02",
         sort: 0,
-        pageTitle: "真人遊戲類 活動圖",
-        image: resolveImageUrl("/images/banner_design/banner_007/banner_007_cover.webp"),
+        pageTitle: "新年活動圖",
+        image: resolveImageUrl("/images/banner_design/banner_002/banner_002_cover.webp"),
         url: "",
         myWork: "",
         images: [
-          resolveImageUrl("/images/banner_design/banner_007/banner_007_1.webp"),
+          resolveImageUrl("/images/banner_design/banner_002/banner_002_1.webp"),
         ]
       },
       {
         type: "list",
-        id: "banner_001_08",
+        id: "banner_001_05",
         sort: 0,
-        pageTitle: "POP-UP彈窗廣告",
-        image: resolveImageUrl("/images/banner_design/banner_008/banner_008_cover.webp"),
+        pageTitle: "體育類 活動圖",
+        image: resolveImageUrl("/images/banner_design/banner_005/banner_005_cover.webp"),
         url: "",
         myWork: "",
         images: [
-          [
-            resolveImageUrl("/images/banner_design/banner_008/banner_008_1.webp"),
-            resolveImageUrl("/images/banner_design/banner_008/banner_008_1.webp"),
-            resolveImageUrl("/images/banner_design/banner_008/banner_008_1.webp")
-          ],
-          resolveImageUrl("/images/banner_design/banner_008/banner_008_1.webp"),
-          resolveImageUrl("/images/banner_design/banner_008/banner_008_2.webp"),
-          resolveImageUrl("/images/banner_design/banner_008/banner_008_3.webp"),
-          resolveImageUrl("/images/banner_design/banner_008/banner_008_4.webp"),
+          resolveImageUrl("/images/banner_design/banner_005/banner_005_1.webp"),
         ]
       },
+      {
+        type: "list",
+        id: "banner_001_01",
+        sort: 0,
+        pageTitle: "尾牙場佈-看板設計",
+        image: resolveImageUrl("/images/banner_design/banner_001/banner_001_cover.webp"),
+        url: "",
+        myWork: "",
+        images: [
+          resolveImageUrl("/images/banner_design/banner_001/banner_001_cover.webp"),
+          resolveImageUrl("/images/banner_design/banner_001/banner_001_1.webp"),
+          resolveImageUrl("/images/banner_design/banner_001/banner_001_2.webp"),
+        ]
+      },
+
+
       {
         type: "list",
         id: "banner_001_09",

@@ -1356,5 +1356,11 @@ body.scroll-over-point .experience {
 #banner_001_08 {
   .nest-image {
     gap: 20px;
+    &.nest-image--multiple {
+      justify-content: center;
+      .nest-image--child  {
+        width: 20%;
+      }
+    }
   }
 }
