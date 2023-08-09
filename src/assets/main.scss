@@ -1339,3 +1339,22 @@ body.scroll-over-point .experience {
   -webkit-animation-fill-mode: forwards !important;
   animation-fill-mode: forwards !important;
 }
+
+
+.nest-image {
+  display: flex;
+  flex-wrap: nowrap;
+
+  .nest-image--child {
+    &.nest-image--multiple {
+      flex: 1;
+    }
+  }
+}
+
+
+#banner_001_08 {
+  .nest-image {
+    gap: 20px;
+  }
+}

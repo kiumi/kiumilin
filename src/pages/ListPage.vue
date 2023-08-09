@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
 
-const props = defineProps<{ images: string[], url?: string, myWork?: string, pageTitle?: string, pageTitleEn?: string, description?: string }>();
+const props = defineProps<{ id: string, images: string[], url?: string, myWork?: string, pageTitle?: string, pageTitleEn?: string, description?: string }>();
 
 const $router = useRouter();
 
@@ -15,7 +15,7 @@ function backToPreviousOrIndex() {
 </script>
 
 <template>
-  <div class="list">
+  <div class="list" :id="props.id">
     <!-- 作品詳細 -->
     <div class="project-detail">
       <div class="inner-page-title animate__animated animate__fadeIn animate__delay-08s">
@@ -35,23 +35,22 @@ function backToPreviousOrIndex() {
       </div>
       <div class="detail-content animate__animated animate__fadeIn animate__delay-12s">
 
-        <template v-for="(image, index) in props.images" :key="index">
-          <img :src="image" alt="">
+        <template v-for="(row, index) in props.images" :key="index">
+          <div class="nest-image" :class="Array.isArray(row) ? 'nest-image--multiple' : 'nest-image--single'">
+            <template v-if="Array.isArray(row)">
+              <template v-for="(subRow, subIndex) in row" :key="subIndex">
+                <div className="nest-image--child ">
+                  <img :src="subRow" alt="">
+                </div>
+              </template>
+            </template>
+            <template v-else>
+              <div className="nest-image--child">
+                <img :src="row" alt="">
+              </div>
+            </template>
+          </div>
         </template>
-        <!-- <img src="/images/project_001/project_001_2.webp" alt="">
-        <img src="/images/project_001/project_001_3.webp" alt="">
-        <img src="/images/project_001/project_001_4.webp" alt="">
-        <img src="/images/project_001/project_001_5.webp" alt="">
-        <img src="/images/project_001/project_001_6.webp" alt="">
-        <img src="/images/project_001/project_001_7.webp" alt="">
-        <img src="/images/project_001/project_001_8.webp" alt="">
-        <img src="/images/project_001/project_001_9.webp" alt="">
-        <img src="/images/project_001/project_001_10.webp" alt="">
-        <img src="/images/project_001/project_001_11.webp" alt="">
-        <img src="/images/project_001/project_001_12.webp" alt="">
-        <img src="/images/project_001/project_001_13.webp" alt="">
-        <img src="/images/project_001/project_001_14.webp" alt="">
-        <img src="/images/project_001/project_001_15.webp" alt=""> -->
       </div>
 
       <a @click="backToPreviousOrIndex" class="back-btn">
@@ -61,13 +60,5 @@ function backToPreviousOrIndex() {
 
       <a href="#" class="bottm-hand"><img src="/images/bottom-hand.png" alt=""></a>
     </div>
-
-
-
-    <!-- <nav >
-      <div><RouterLink to="/">Index</RouterLink></div>
-      <div><RouterLink to="/list">List</RouterLink></div>
-      <div><RouterLink to="/gallery">Gallery</RouterLink></div>
-    </nav> -->
   </div>
 </template>

@@ -46,12 +46,6 @@ function backToPreviousOrIndex() {
             <img :src="row.image" alt="">
           </RouterLink>
         </template>
-        <!-- <a href="#" class="items"><img src="/images/web_company/web_001.jpg" alt=""></a>
-        <a href="#" class="items"><img src="/images/web_company/web_002.jpg" alt=""></a>
-        <a href="#" class="items"><img src="/images/web_company/web_003.jpg" alt=""></a>
-        <a href="#" class="items"><img src="/images/web_company/web_004.jpg" alt=""></a>
-        <a href="#" class="items"><img src="/images/web_company/web_005.jpg" alt=""></a>
-        <a href="#" class="items"><img src="/images/web_company/web_006.jpg" alt=""></a> -->
       </div>
 
       <a @click="backToPreviousOrIndex" class="back-btn">
@@ -60,12 +54,6 @@ function backToPreviousOrIndex() {
       </a>
     </div>
     <a href="#" class="bottm-hand"><img src="/images/bottom-hand.png" alt=""></a>
-
-    <!-- <nav >
-      <div><RouterLink to="/">Index</RouterLink></div>
-      <div><RouterLink to="/list">List</RouterLink></div>
-      <div><RouterLink to="/gallery">Gallery</RouterLink></div>
-    </nav> -->
   </div>
 </template>
 

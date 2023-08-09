@@ -15,7 +15,7 @@ export interface BaseData {
 
 export interface ListData extends BaseData {
   type: "list",
-  images: string[],
+  images: (string | string[])[],
   url?: string,
   myWork?: string,
   description?: string
@@ -795,6 +795,11 @@ export const data: DiverseData = [
         url: "",
         myWork: "",
         images: [
+          [
+            resolveImageUrl("/images/banner_design/banner_008/banner_008_1.webp"),
+            resolveImageUrl("/images/banner_design/banner_008/banner_008_1.webp"),
+            resolveImageUrl("/images/banner_design/banner_008/banner_008_1.webp")
+          ],
           resolveImageUrl("/images/banner_design/banner_008/banner_008_1.webp"),
           resolveImageUrl("/images/banner_design/banner_008/banner_008_2.webp"),
           resolveImageUrl("/images/banner_design/banner_008/banner_008_3.webp"),
