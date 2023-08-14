@@ -152,7 +152,7 @@ export const data: DiverseData = [
         image: resolveImageUrl("/images/web_company/web_029.webp"),
         pageTitle:"1111人力銀行",
         url: "https://www.1111.com.tw",
-        myWork: "切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_029.webp"),
           resolveImageUrl("/images/web_company/web_029_1.webp"),
@@ -167,7 +167,7 @@ export const data: DiverseData = [
         image: resolveImageUrl("/images/web_company/web_001.webp"),
         pageTitle:"螢火蟲原創有限公司",
         url: "https://www.lbo.com.tw",
-        myWork: "設計/切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_001.webp"),
           resolveImageUrl("/images/web_company/web_001_2.webp"),
@@ -180,7 +180,7 @@ export const data: DiverseData = [
         image: resolveImageUrl("/images/web_company/web_002.webp"),
         pageTitle:"清水溪書店有限公司",
         url: "https://www.cbookstore.com.tw",
-        myWork: "設計/切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_002.webp"),
           resolveImageUrl("/images/web_company/web_002_2.webp"),
@@ -193,7 +193,7 @@ export const data: DiverseData = [
         pageTitle:"台中劉麵包廠",
         image: resolveImageUrl("/images/web_company/web_023.webp"),
         url: "http://www.nutricom.com.tw/index.html",
-        myWork: "設計/切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_023.webp"),
           resolveImageUrl("/images/web_company/web_023_2.webp"),
@@ -212,7 +212,7 @@ export const data: DiverseData = [
         image: resolveImageUrl("/images/web_company/web_003.webp"),
         pageTitle:"谷神科技有限公司",
         url: "https://www.gu-shen.com.tw",
-        myWork: "設計/切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_003.webp"),
           resolveImageUrl("/images/web_company/web_003_2.webp"),
@@ -237,7 +237,7 @@ export const data: DiverseData = [
         pageTitle:"內湖101健康管理診所",
         image: resolveImageUrl("/images/web_company/web_008.webp"),
         url: "https://www.neihu101.com.tw",
-        myWork: "設計/切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_008.webp"),
           resolveImageUrl("/images/web_company/web_008_2.webp"),
@@ -271,7 +271,7 @@ export const data: DiverseData = [
         pageTitle:"華綺資訊股份有限公司",
         image: resolveImageUrl("/images/web_company/web_007.webp"),
         url: "https://www.logerp.com.tw",
-        myWork: "設計/切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_007.webp"),
           resolveImageUrl("/images/web_company/web_007_2.webp"),
@@ -296,7 +296,7 @@ export const data: DiverseData = [
         pageTitle:"翔郁整合行銷有限公司",
         image: resolveImageUrl("/images/web_company/web_011.webp"),
         url: "https://www.xyu.com.tw",
-        myWork: "設計/切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_011.webp"),
           resolveImageUrl("/images/web_company/web_011_2.webp"),
@@ -321,7 +321,7 @@ export const data: DiverseData = [
         image: resolveImageUrl("/images/web_company/web_018.webp"),
         pageTitle:"涵萃生物科技",
         url: "https://www.herbterra.com.tw/",
-        myWork: "設計/切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_018.webp"),
           resolveImageUrl("/images/web_company/web_018_2.webp"),
@@ -334,7 +334,7 @@ export const data: DiverseData = [
         image: resolveImageUrl("/images/web_company/web_017.webp"),
         pageTitle:"CALL ME 防霉貼片",
         url: "https://tw.cleanmold.com.tw",
-        myWork: "設計",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_017.webp"),
           resolveImageUrl("/images/web_company/web_017_2.webp"),
@@ -347,7 +347,7 @@ export const data: DiverseData = [
         image: resolveImageUrl("/images/web_company/web_019.webp"),
         pageTitle:"WICOM 抗噪耳機",
         url: "",
-        myWork: "設計/切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_019.webp"),
           resolveImageUrl("/images/web_company/web_019_2.webp"),
@@ -360,7 +360,7 @@ export const data: DiverseData = [
         image: resolveImageUrl("/images/web_company/web_027.webp"),
         pageTitle:"聖元創新整合股份有限公司",
         url: "",
-        myWork: "設計/切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_027.webp"),
           resolveImageUrl("/images/web_company/web_027_2.webp"),
@@ -373,7 +373,7 @@ export const data: DiverseData = [
         image: resolveImageUrl("/images/web_company/web_020.webp"),
         pageTitle:"御珍寶國際有限公司",
         url: "https://www.0800698198.com.tw",
-        myWork: "設計/切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_020.webp"),
         ]
@@ -385,7 +385,7 @@ export const data: DiverseData = [
         image: resolveImageUrl("/images/web_company/web_021.webp"),
         pageTitle:"億新科技有限公司",
         url: "https://www.etc-s.com",
-        myWork: "設計/切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_021.webp"),
           resolveImageUrl("/images/web_company/web_021_2.webp"),
@@ -413,7 +413,7 @@ export const data: DiverseData = [
         image: resolveImageUrl("/images/web_company/web_024.webp"),
         pageTitle:"雋上科技有限公司",
         url: "https://www.js-tech.tw",
-        myWork: "設計/切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_024.webp"),
           resolveImageUrl("/images/web_company/web_024_2.webp"),
@@ -426,7 +426,7 @@ export const data: DiverseData = [
         image: resolveImageUrl("/images/web_company/web_028.webp"),
         pageTitle:"名一生物科技股份有限公司",
         url: "https://www.yofa-tech.com",
-        myWork: "切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_028.webp"),
           resolveImageUrl("/images/web_company/web_028_2.webp"),
@@ -439,7 +439,7 @@ export const data: DiverseData = [
         image: resolveImageUrl("/images/web_company/web_026.webp"),
         pageTitle:"豐洲企業股份有限公司",
         url: "https://www.fongchow.com.tw",
-        myWork: "設計/切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_026.webp"),
           resolveImageUrl("/images/web_company/web_026_2.webp"),
@@ -452,7 +452,7 @@ export const data: DiverseData = [
         image: resolveImageUrl("/images/web_company/web_012.webp"),
         pageTitle:"光點石材",
         url: "https://www.lightstone.com.tw/",
-        myWork: "切版",
+        myWork: "",
         images: [
           resolveImageUrl("/images/web_company/web_012.webp"),
           resolveImageUrl("/images/web_company/web_012_2.webp"),

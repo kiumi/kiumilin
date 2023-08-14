@@ -143,9 +143,15 @@ body {
 .project-detail {
   .company_url {
     a {
+      margin-left: 20px;
       text-decoration: none;
-      color: #2B2B3F;
+      padding: 4px 8px;
+      background: #f8a279;
+      color: #fff;
+      border-radius: 4px;
       transition: all 0.3s;
+      cursor: pointer;
+      font-size: 13px;
       &:hover {
         opacity: 0.6;
       }

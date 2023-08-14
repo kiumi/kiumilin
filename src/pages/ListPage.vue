@@ -23,11 +23,20 @@ function backToPreviousOrIndex() {
           <div class="title-en">{{ props.pageTitleEn ?? "Project Detail" }}</div>
           <span></span>
           <div class="title-tw">{{ props.pageTitle ?? "網頁平台" }}</div>
+          <div class="company_url" v-if="props.url">
+          <a :href="props.url" target="_blank">
+            前往連結
+          </a>
+        </div>
         </div>
         <a @click="backToPreviousOrIndex" class="back-index-btn">Back to Index</a>
       </div>
       <div class="describe" v-if="props.url || props.myWork">
-        <div class="company_url" v-if="props.url">網址: <a :href="props.url" target="_blank">{{ props.url }}</a></div>
+        <!-- <div class="company_url" v-if="props.url">
+          <a :href="props.url" target="_blank">
+            前往連結
+          </a>
+        </div> -->
         <div class="mywork" v-if="props.myWork">開發: <span>{{ props.myWork }}</span></div>
       </div>
       <div v-if="props.description" class="inner-page-describe">
