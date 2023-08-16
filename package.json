@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "source $HOME/.nvm/nvm.sh; nvm exec vite",
-    "build": "source $HOME/.nvm/nvm.sh; nvm exec run-p prestart type-check build-only",
+    "build": "source $HOME/.nvm/nvm.sh; nvm exec run-p type-check build-only",
     "preview": "source $HOME/.nvm/nvm.sh; nvm exec vite preview",
     "build-only": "source $HOME/.nvm/nvm.sh; nvm exec vite build --base=/kiumilin/",
     "type-check": "source $HOME/.nvm/nvm.sh; nvm exec vue-tsc --noEmit -p tsconfig.app.json --composite false",
