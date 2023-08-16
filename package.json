@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "source $HOME/.nvm/nvm.sh; nvm use;vite",
-    "build": "run-p type-check build-only",
-    "preview": "vite preview",
-    "build-only": "vite build --base=/kiumilin/",
-    "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+    "dev": "source $HOME/.nvm/nvm.sh; nvm exec vite",
+    "build": "source $HOME/.nvm/nvm.sh; nvm exec run-p prestart type-check build-only",
+    "preview": "source $HOME/.nvm/nvm.sh; nvm exec vite preview",
+    "build-only": "source $HOME/.nvm/nvm.sh; nvm exec vite build --base=/kiumilin/",
+    "type-check": "source $HOME/.nvm/nvm.sh; nvm exec vue-tsc --noEmit -p tsconfig.app.json --composite false",
+    "lint": "source $HOME/.nvm/nvm.sh; nvm exec eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
     "pinia": "^2.1.3",
