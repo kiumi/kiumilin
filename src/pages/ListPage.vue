@@ -29,7 +29,7 @@ function backToPreviousOrIndex() {
           </a>
         </div>
         </div>
-        <a @click="backToPreviousOrIndex" class="back-index-btn">Back</a>
+        <a @click="backToPreviousOrIndex" class="back-index-btn">Back to Index</a>
       </div>
       <div class="describe" v-if="props.url || props.myWork">
         <!-- <div class="company_url" v-if="props.url">

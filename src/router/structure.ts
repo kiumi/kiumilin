@@ -60,24 +60,6 @@ export const data: DiverseData = [
   },
   {
     type: "list",
-    id: "project_002",
-    sort: 0,
-    image: resolveImageUrl("/images/project_002/project_002_1.webp"),
-    title: "Module Mobile UI Design 模組化平台",
-    pageTitle: "手機版-模組化UI設計",
-    summary:"以模組化開發的娛樂型平台，讓您快速選擇元件模組建立一個平台為開發理念。統整平台功能與制定完整的流程架構, 梳理各項功能後, 將各功能做成不同視覺的元件。 \
-    建立平台畫面時, 能任意選擇元件組成或者顏色的替換, 達到不同風格的視覺享受。",
-    images: [
-      resolveImageUrl("/images/project_002/project_002_1.webp"),
-      resolveImageUrl("/images/project_002/project_002_2.webp"),
-      resolveImageUrl("/images/project_002/project_002_3.webp"),
-      resolveImageUrl("/images/project_002/project_002_4.webp"),
-      resolveImageUrl("/images/project_002/project_002_5.webp"),
-      resolveImageUrl("/images/project_002/project_002_6.webp")
-    ]
-  },
-  {
-    type: "list",
     id: "project_003",
     sort: 0,
     image: resolveImageUrl("/images/project_003/project_003_1.webp"),
@@ -108,6 +90,25 @@ export const data: DiverseData = [
       resolveImageUrl("/images/project_003/project_003_21.webp"),
     ]
   },
+  {
+    type: "list",
+    id: "project_002",
+    sort: 0,
+    image: resolveImageUrl("/images/project_002/project_002_1.webp"),
+    title: "Module Mobile UI Design 模組化平台",
+    pageTitle: "手機版-模組化UI設計",
+    summary:"以模組化開發的娛樂型平台，讓您快速選擇元件模組建立一個平台為開發理念。統整平台功能與制定完整的流程架構, 梳理各項功能後, 將各功能做成不同視覺的元件。 \
+    建立平台畫面時, 能任意選擇元件組成或者顏色的替換, 達到不同風格的視覺享受。",
+    images: [
+      resolveImageUrl("/images/project_002/project_002_1.webp"),
+      resolveImageUrl("/images/project_002/project_002_2.webp"),
+      resolveImageUrl("/images/project_002/project_002_3.webp"),
+      resolveImageUrl("/images/project_002/project_002_4.webp"),
+      resolveImageUrl("/images/project_002/project_002_5.webp"),
+      resolveImageUrl("/images/project_002/project_002_6.webp")
+    ]
+  },
+
   {
     type: "list",
     id: "web_029",
@@ -623,6 +624,20 @@ export const data: DiverseData = [
           resolveImageUrl("/images/web_game/game_001/game_001_6.webp"),
           resolveImageUrl("/images/web_game/game_001/game_001_7.webp"),
           resolveImageUrl("/images/web_game/game_001/game_001_8.webp"),
+        ]
+      },
+      {
+        type: "list",
+        id: "web_002_08",
+        sort: 0,
+        pageTitle: "娛樂平台版面設計",
+        description:" ",
+        image: resolveImageUrl("/images/web_game/game_008/game_008_cover.webp"),
+        url: "",
+        myWork: "",
+        images: [
+          resolveImageUrl("/images/web_game/game_008/game_008_cover.webp"),
+          resolveImageUrl("/images/web_game/game_008/game_008_2.webp"),
         ]
       },
       {
