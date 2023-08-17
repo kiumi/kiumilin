@@ -104,10 +104,10 @@ function jumpTo(to: string) {
               </div>
               <div class="col-sm-11">
                 <div class="info-top">
-                  <span class="job-title">前端設計師</span>
-                  <span>科技有限公司 2022 - 2023(接案)</span>
+                  <span class="job-title">科技有限公司 2022 - 2023</span>
+                  <span>前端設計師</span>
                 </div>
-                <div class="info-introduction">簡介: 主要為網站UI、UX視覺設計 / 前端切版</div>
+                <div class="info-introduction">簡介: 主要為網站UI、UX視覺設計 / 前端切版 (接案)</div>
                 <div class="info-bottom">
                   <ul>
                     <li>與產品經理配合, 提供需求建議 </li>
@@ -117,6 +117,7 @@ function jumpTo(to: string) {
                     <li>網頁前端切版</li>
                   </ul>
                 </div>
+
               </div>
             </div>
             <div class="time-line-group animate__animated animate__delay-12s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
@@ -128,10 +129,10 @@ function jumpTo(to: string) {
               </div>
               <div class="col-sm-11">
                 <div class="info-top">
-                  <span class="job-title">前端設計師</span>
-                  <span>新視野多媒體行銷有限公司 2019 - 2023(接案)</span>
+                  <span class="job-title">新視野多媒體行銷有限公司 2019 - 2023</span>
+                  <span>前端設計師</span>
                 </div>
-                <div class="info-introduction">簡介: 負責形象網站主視覺設計/ 前端切版, 上線網站約30-50站</div>
+                <div class="info-introduction">簡介: 負責形象網站主視覺設計/ 前端切版, 上線網站約30-50站 (接案)</div>
                 <div class="info-bottom">
                   <ul>
                     <li>網頁主視覺設計，依造客戶需求，設計符合公司形象的網站視覺</li>
@@ -150,10 +151,10 @@ function jumpTo(to: string) {
               </div>
               <div class="col-sm-11">
                 <div class="info-top">
-                  <span class="job-title">前端設計師</span>
-                  <span>有樂生活有限公司 2023 - 2023(接案)</span>
+                  <span class="job-title">有樂生活有限公司 2023 - 2023</span>
+                  <span>前端設計師</span>
                 </div>
-                <div class="info-introduction">簡介: 主要負責響應式網站前端切版</div>
+                <div class="info-introduction">簡介: 主要負責響應式網站前端切版 (接案)</div>
                 <div class="info-bottom">
                   <ul>
                     <li>與產品經理. 設計師/ 工程師配合, 協同執行專案</li>
@@ -173,10 +174,10 @@ function jumpTo(to: string) {
               </div>
               <div class="col-sm-11">
                 <div class="info-top">
-                  <span class="job-title">前端切版</span>
-                  <span>1111人力銀行 2022 - 2022(接案)</span>
+                  <span class="job-title">1111人力銀行 2022 - 2022</span>
+                  <span>前端切版</span>
                 </div>
-                <div class="info-introduction">簡介: 協同多前端位切版師, 進行新版的響應式網站前端切版</div>
+                <div class="info-introduction">簡介: 協同多前端位切版師, 進行新版的響應式網站前端切版 (接案)</div>
                 <div class="info-bottom">
                   <ul>
                     <li>與專案經理、前端設計人員配合, 依據設計稿共同執行切版作業</li>
@@ -196,8 +197,8 @@ function jumpTo(to: string) {
               </div>
               <div class="col-sm-11">
                 <div class="info-top">
-                  <span class="job-title">UI視覺設計師</span>
-                  <span>宏唯科技有限公司 2022 - 2022</span>
+                  <span class="job-title">宏唯科技有限公司 2022 - 2022</span>
+                  <span>UI視覺設計師</span>
                 </div>
                 <div class="info-introduction">簡介: 產品主營為歐美市場(巴西、南美)，為體育愛好者打造更好的體育平台</div>
                 <div class="info-bottom">
@@ -222,8 +223,8 @@ function jumpTo(to: string) {
               </div>
               <div class="col-sm-11">
                 <div class="info-top">
-                  <span class="job-title">網頁前端設計師</span>
-                  <span>樂夠科技有限公司 2018 - 2022</span>
+                  <span class="job-title">樂夠科技有限公司 2018 - 2022</span>
+                  <span>網頁前端設計師</span>
                 </div>
                 <div class="info-introduction">簡介: 主要為多樣版網頁開發 / 模組化功能型平台/ UI、UX視覺設計/ 前端切版 </div>
                 <div class="info-bottom">
@@ -247,8 +248,8 @@ function jumpTo(to: string) {
               </div>
               <div class="col-sm-11">
                 <div class="info-top">
-                  <span class="job-title">網頁前端設計師</span>
-                  <span>亮鈞行銷廣告 2015-2016</span>
+                  <span class="job-title">亮鈞行銷廣告 2015-2016</span>
+                  <span>網頁前端設計師</span>
                 </div>
                 <div class="info-introduction">簡介: 形象網站視覺設計 / 響應式網頁切版</div>
                 <div class="info-bottom">

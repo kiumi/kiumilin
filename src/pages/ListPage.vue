@@ -25,11 +25,11 @@ function backToPreviousOrIndex() {
           <div class="title-tw">{{ props.pageTitle ?? "網頁平台" }}</div>
           <div class="company_url" v-if="props.url">
           <a :href="props.url" target="_blank">
-            前往連結
+            連結
           </a>
         </div>
         </div>
-        <a @click="backToPreviousOrIndex" class="back-index-btn">Back to Index</a>
+        <a @click="backToPreviousOrIndex" class="back-index-btn">Back</a>
       </div>
       <div class="describe" v-if="props.url || props.myWork">
         <!-- <div class="company_url" v-if="props.url">

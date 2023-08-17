@@ -1,11 +1,8 @@
 @import './base.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 :root {
   --animate-delay: 1s;
 }
-
-
-
 
 // 手機版樣式
 
@@ -236,6 +233,7 @@ body {
   gap: 16px;
   padding: 180px 0 60px 0;
   position: relative;
+  cursor: pointer;
   &::before {
     content: "";
     width: 280px;
@@ -401,7 +399,7 @@ body {
 }
 
 .back-index-btn {
-  font-size: 18px;
+  font-size: 22px;
   font-family: bm jua;
   color: transparent;
   background-image: linear-gradient(90deg, rgba(243, 115, 53, 0.568627451) 0%, #F9779D 50%);
@@ -421,8 +419,15 @@ body {
     position: absolute;
     z-index: -1;
     opacity: 0.6;
-    top: -40px;
+    right: -40px;
+    top: -48px;
   }
+  // span {
+  //   background: transparent !important;
+  //   width: 20px !important;
+  //   height: 20px !important;
+  //   display: inline-block;
+  // }
 }
 
 .inner-page-title {
@@ -443,6 +448,7 @@ body {
     background: url(/images/title-deco.svg) no-repeat;
     width: 24px;
     height: 18px;
+    background-size: contain;
   }
 
 
@@ -928,6 +934,10 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .detail-content {
+    width: 100%;
+    margin: 0;
+  }
   .site-nav {
     display:none;
   }
@@ -1068,6 +1078,17 @@ body {
   }
 }
 @media (max-width: 768px){
+  .contact {
+    font-size: 24px;
+    line-height: 1.5;
+    padding: 30px 0 80px;
+  }
+  .inner-page-title .title-en {
+    font-size: 36px;
+  }
+  .inner-page-title .title-tw {
+    font-size: 20px;
+  }
   .hamburger {
     width: 28px;
     div {
@@ -1078,11 +1099,11 @@ body {
     width: 38px;
   }
   .inner-page-title .title{
-    display: block;
+    // display: block;s
     line-height: 1.75;
   }
   .inner-page-title span {
-    display: none;
+    // display: none;
   }
   .su-parent {
     .su-text-content {
@@ -1118,9 +1139,46 @@ body {
       }
     }
   }
+  .project-detail .company_url a {
+    margin-left: 0;
+  }
+  .tab-list .tab {
+    padding: 4px 12px;
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 580px){
+  .project {
+    .project-items {
+      .title {
+        font-size: 20px;
+      }
+      .info-bottom .inner-page-title {
+        padding: 0 0 12px 15px;
+      }
+    }
+  }
+
+  .company_url {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  .main-title::before, .inner-page-title::before {
+    width: 15px;
+  }
+  .back-index-btn {
+    display: none;
+  }
+  .inner-page-title {
+    .title-en {
+      font-size: 24px;
+    }
+    .title-tw {
+      font-size: 16px;
+    }
+  }
   .mobile-nav {
     .nav-wrapper {
       nav a {
@@ -1134,7 +1192,7 @@ body {
 
   .back-btn {
     font-size: 24px;
-    padding: 65px 30px 0;
+    padding: 55px 30px 50px;
     &::before {
       width: 160px;
       height: 80px;
@@ -1144,15 +1202,12 @@ body {
       height: 30px;
     }
   }
-  .tab-list .tab {
-    padding: 6px 16px;
-    font-size: 14px;
-  }
+
   .web-content {
     gap: 16px;
     .items {
       width: calc(50% - 8px);
-      height: 130px;
+      height: 100px;
     }
   }
   .index {
@@ -1177,7 +1232,8 @@ body {
             padding: 16px 0 10px;
           }
           .info-top .job-title {
-            font-size: 22px;
+            font-size: 20px;
+            display: block;
           }
           .info-introduction {
             letter-spacing: 0;

@@ -115,7 +115,7 @@ export const data: DiverseData = [
     pageTitle:"1111人力銀行",
     summary:"提供求職服務的1111人力銀行，此視覺為平台新版面。\
     主要工作範疇為前端切版，在版面模組有不同的排列方式，\
-    以及移動端的呈現，故在切版執行時這都是重要的考量因素。",
+    以及響應式的呈現，故在切版執行時這都是重要的考量因素。",
     image: resolveImageUrl("/images/web_company/web_029.webp"),
     url: "https://www.1111.com.tw",
     images: [
@@ -467,6 +467,7 @@ export const data: DiverseData = [
     sort: 0,
     image: resolveImageUrl("/images/web_game/web_game_cover.webp"),
     title: "遊戲平台",
+    pageTitle: "網頁設計",
     summary: "主要為形象網站的網頁主視覺設計，依造客戶需求，設計符合公司形象的網站視覺。工作範疇包括視覺設計/ Banner圖製作與前端切版。",
     navigation: [
       {
@@ -700,7 +701,6 @@ export const data: DiverseData = [
       }
     ],
     lists: [
-
       {
         type: "list",
         id: "banner_001_03",
@@ -739,7 +739,7 @@ export const data: DiverseData = [
         type: "list",
         id: "banner_001_04",
         sort: 0,
-        pageTitle: "促銷累活動圖",
+        pageTitle: "促銷類活動圖",
         image: resolveImageUrl("/images/banner_design/banner_004/banner_004_cover.webp"),
         url: "",
         myWork: "",
@@ -848,6 +848,21 @@ export const data: DiverseData = [
     lists: [
       {
         type: "list",
+        id: "logo_001_01",
+        sort: 0,
+        pageTitle: "企業LOGO設計",
+        image: resolveImageUrl("/images/graphic/logo/logo_cover.webp"),
+        url: "",
+        myWork: "",
+        images: [
+          resolveImageUrl("/images/graphic/logo/logo_001_1.webp"),
+          resolveImageUrl("/images/graphic/logo/logo_001_2.webp"),
+          resolveImageUrl("/images/graphic/logo/logo_001_3.webp"),
+          resolveImageUrl("/images/graphic/logo/logo_001_4.webp"),
+        ]
+      },
+      {
+        type: "list",
         id: "graphic_001_01",
         sort: 0,
         pageTitle: "社區營造 - 海報/文宣製作 (2012年)",
@@ -939,4 +954,5 @@ export const data: DiverseData = [
       },
     ]
   },
+
 ]

@@ -22,9 +22,9 @@ function backToPreviousOrIndex() {
     <div class="web-company">
       <div class="inner-page-title animate__animated animate__fadeIn animate__delay-08s">
         <div class="title">
-          <div class="title-en">{{ props.pageTitleEn ?? "Web Design" }}</div>
+          <div class="title-en">{{ props.pageTitleEn ?? "Project Detail" }}</div>
           <span></span>
-          <div class="title-tw">{{ props.pageTitle ?? "網頁平台" }}</div>
+          <div class="title-tw">{{ props.pageTitle ?? "平面視覺" }}</div>
         </div>
         <a @click="backToPreviousOrIndex" class="back-index-btn">Back to Index</a>
       </div>
