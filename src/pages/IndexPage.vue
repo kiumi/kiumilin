@@ -110,11 +110,11 @@ function jumpTo(to: string) {
                 <div class="info-introduction">簡介: 主要為網站UI、UX視覺設計 / 前端切版 (接案)</div>
                 <div class="info-bottom">
                   <ul>
-                    <li>與產品經理配合, 提供需求建議 </li>
-                    <li>負責網頁視覺設計, 製作符合平台的視覺風格 </li>
+                    <li>與產品經理溝通需求內容, 針對需求進行分析並給予建議 </li>
+                    <li>負責規劃、設計網頁UI視覺 </li>
+                    <li>進行RWD響應式設計並完切版至上線</li>
                     <li>負責製作Banner/ 彈窗廣告/ GIF廣告 </li>
                     <li>優化平台功能視覺 </li>
-                    <li>網頁前端切版</li>
                   </ul>
                 </div>
 
