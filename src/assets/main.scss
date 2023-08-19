@@ -1099,11 +1099,11 @@ body {
     width: 38px;
   }
   .inner-page-title .title{
-    // display: block;s
+    display: block;
     line-height: 1.75;
   }
   .inner-page-title span {
-    // display: none;
+    display: none;
   }
   .su-parent {
     .su-text-content {
@@ -1149,6 +1149,12 @@ body {
 }
 
 @media (max-width: 580px){
+  .inner-page-title {
+    padding: 0 0 15px 28px;
+  }
+  .tab-list {
+    padding: 0 0 16px 0;
+  }
   .project {
     .project-items {
       .title {
@@ -1204,10 +1210,10 @@ body {
   }
 
   .web-content {
-    gap: 16px;
+    gap: 10px;
     .items {
-      width: calc(50% - 8px);
-      height: 100px;
+      width: calc(50% - 5px);
+      height: 92px;
     }
   }
   .index {
