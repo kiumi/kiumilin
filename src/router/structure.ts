@@ -614,6 +614,9 @@ export const data: DiverseData = [
         description:"",
         image: resolveImageUrl("/images/web_game/game_001/game_001_cover.webp"),
         url: "",
+
+
+
         myWork: "",
         images: [
           resolveImageUrl("/images/web_game/game_001/game_001_1.webp"),
@@ -628,7 +631,7 @@ export const data: DiverseData = [
       },
       {
         type: "list",
-        id: "web_002_08",
+        id: "web_002_12",
         sort: 0,
         pageTitle: "娛樂平台版面設計",
         description:" ",
