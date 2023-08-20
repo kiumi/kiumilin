@@ -1224,6 +1224,7 @@ body {
     .bottom-txt {
       font-size: 16px;
       right: calc(50% - 94px);
+      bottom: 5%;
     }
   }
   .experience {
@@ -1321,9 +1322,11 @@ body {
             margin-bottom: 8px;
           }
           li {
-            font-size: 15px;
-            height: 40px;
-
+            font-size: 13px;
+            height: 28px;
+            padding: 0 12px;
+            line-height: 28px;
+            font-weight: 500;
           }
         }
       }
