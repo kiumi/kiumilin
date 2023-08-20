@@ -836,7 +836,7 @@ body {
   }
 }
 
-@media (max-width: 1580px) {
+@media (max-width: 1600px) {
   .web-content {
     .items {
       height: 255px;
@@ -880,16 +880,30 @@ body {
       font-size: 18px;
     }
   }
+  .su-parent {
+    .su-text-content {
+      .txt-lg {
+        font-size: 160px;
+        line-height: 180px;
+      }
+      .txt-md {
+        font-size: 48px;
+      }
+    }
+    .su-child-right {
+      height: 66vh;
+    }
+  }
 }
 @media (max-width: 1440px) {
   .su-parent {
     .su-text-content {
       .txt-lg {
-        font-size: 150px;
-        line-height: 170px;
+        font-size: 128px;
+        line-height: 140px;
       }
       .txt-md {
-        font-size: 45px;
+        font-size: 36px;
       }
       .content-btn {
         ul li {
@@ -962,8 +976,8 @@ body {
         line-height: 150px;
       }
       .txt-md {
-        font-size: 30px;
-        letter-spacing: 10px;
+        font-size: 28px;
+        letter-spacing: 6px;
 
       }
       .content-btn {
@@ -972,8 +986,8 @@ body {
           gap: 10px;
           margin-bottom: 10px;
           li {
-            font-size: 22px;
-            padding: 6px 20px;
+            font-size: 16px;
+            padding: 4px 16px;
           }
           justify-content: center;
 
@@ -1063,13 +1077,6 @@ body {
         line-height: 35px;
         padding: 40px 0 0 12px;
       }
-      // .info-top {
-      //   display: block;
-      //   &::before {
-      //     width: 20px;
-      //     height: 3px;
-      //   }
-      // }
     }
     .skills-content {
       gap: 36px;
@@ -1106,13 +1113,19 @@ body {
     display: none;
   }
   .su-parent {
+    .su-child-right {
+      flex: 1 0 38vh;
+    }
     .su-text-content {
+      .content-btn {
+        margin-top: 24px;
+      }
       .txt-lg {
-        font-size: 110px;
+        font-size: 100px;
         line-height: 120px;
       }
       .txt-md {
-        font-size: 30px;
+        font-size: 25px;
       }
 
     }
@@ -1296,6 +1309,9 @@ body {
         }
       }
     }
+  }
+  .su-parent .su-text-content .content-btn {
+    margin-top: 20px;
   }
 }
 
