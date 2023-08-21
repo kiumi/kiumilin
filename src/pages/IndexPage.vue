@@ -111,7 +111,7 @@ function jumpTo(to: string) {
                 <div class="info-bottom">
                   <ul>
                     <li>負責規劃、設計網頁UI視覺 </li>
-                    <li>使用Ｈtml、css完成RWD響應式切版</li>
+                    <li>使用Ｈtml、css完成RWD響應式網頁切版</li>
                     <li>負責製作Banner/ 彈窗廣告/ GIF廣告 </li>
                     <li>優化平台功能視覺 </li>
                     <li>與產品經理溝通需求內容, 針對需求進行分析並給予建議 </li>
