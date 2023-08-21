@@ -104,90 +104,21 @@ function jumpTo(to: string) {
               </div>
               <div class="col-sm-11">
                 <div class="info-top">
-                  <span class="job-title">科技有限公司 2023</span>
+                  <span class="job-title">Freelancer 2023</span>
                   <span>前端設計師</span>
                 </div>
-                <div class="info-introduction">簡介: 主要為網站UI、UX視覺設計 / 前端切版 (接案)</div>
+                <div class="info-introduction">簡介: 主要為網站UI、UX視覺設計 / 前端切版 </div>
                 <div class="info-bottom">
                   <ul>
-                    <li>與產品經理溝通需求內容, 針對需求進行分析並給予建議 </li>
                     <li>負責規劃、設計網頁UI視覺 </li>
-                    <li>進行RWD響應式設計並完切版至上線</li>
+                    <li>使用Ｈtml、css完成RWD響應式切版</li>
                     <li>負責製作Banner/ 彈窗廣告/ GIF廣告 </li>
                     <li>優化平台功能視覺 </li>
-                  </ul>
-                </div>
-
-              </div>
-            </div>
-            <div class="time-line-group animate__animated animate__delay-12s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
-              <div class="col-sm-1">
-                <div class="time-line-section">
-                  <div class="time-dot"></div>
-                  <div class="time-line"></div>
-                </div>
-              </div>
-              <div class="col-sm-11">
-                <div class="info-top">
-                  <span class="job-title">新視野多媒體行銷有限公司 2023</span>
-                  <span>前端設計師</span>
-                </div>
-                <div class="info-introduction">簡介: 負責形象網站主視覺設計/ 前端切版, 上線網站約30-50站 (接案)</div>
-                <div class="info-bottom">
-                  <ul>
-                    <li>網頁主視覺設計，依造客戶需求，設計符合公司形象的網站視覺</li>
-                    <li>使用Ｈtml、css完成網頁切端切版, 含響應式裝置</li>
-                  </ul>
-                </div>
-
-              </div>
-            </div>
-            <div class="time-line-group animate__animated animate__delay-16s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
-              <div class="col-sm-1">
-                <div class="time-line-section">
-                  <div class="time-dot"></div>
-                  <div class="time-line"></div>
-                </div>
-              </div>
-              <div class="col-sm-11">
-                <div class="info-top">
-                  <span class="job-title">有樂生活有限公司 2023</span>
-                  <span>前端設計師</span>
-                </div>
-                <div class="info-introduction">簡介: 主要負責響應式網站前端切版 (接案)</div>
-                <div class="info-bottom">
-                  <ul>
-                    <li>與產品經理. 設計師/ 工程師配合, 協同執行專案</li>
-                    <li>依平台需求, 提供多面向建議與優化方案</li>
-                    <li>依據設計師網頁設計稿(電腦版) 做響應式延伸, 進行前端切版, 加入小動畫增添操作豐富度與體感</li>
-                  </ul>
-                </div>
-
-              </div>
-            </div>
-            <div class="time-line-group animate__animated animate__delay-17s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
-              <div class="col-sm-1">
-                <div class="time-line-section">
-                  <div class="time-dot"></div>
-                  <div class="time-line"></div>
-                </div>
-              </div>
-              <div class="col-sm-11">
-                <div class="info-top">
-                  <span class="job-title">1111人力銀行 2022</span>
-                  <span>前端切版</span>
-                </div>
-                <div class="info-introduction">簡介: 協同多前端位切版師, 進行新版的響應式網站前端切版 (接案)</div>
-                <div class="info-bottom">
-                  <ul>
-                    <li>與專案經理、前端設計人員配合, 依據設計稿共同執行切版作業</li>
-                    <li>依溝通與確認，共同定義切版規範案</li>
+                    <li>與產品經理溝通需求內容, 針對需求進行分析並給予建議 </li>
                   </ul>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="exp-content ">
             <div class="time-line-group animate__animated animate__delay-08s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
               <div class="col-sm-1">
                 <div class="time-line-section">
@@ -214,6 +145,74 @@ function jumpTo(to: string) {
 
               </div>
             </div>
+            <!-- <div class="time-line-group animate__animated animate__delay-12s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
+              <div class="col-sm-1">
+                <div class="time-line-section">
+                  <div class="time-dot"></div>
+                  <div class="time-line"></div>
+                </div>
+              </div>
+              <div class="col-sm-11">
+                <div class="info-top">
+                  <span class="job-title">新視野多媒體行銷有限公司 2023</span>
+                  <span>前端設計師</span>
+                </div>
+                <div class="info-introduction">簡介: 負責形象網站主視覺設計/ 前端切版, 上線網站約30-50站 (接案)</div>
+                <div class="info-bottom">
+                  <ul>
+                    <li>網頁主視覺設計，依造客戶需求，設計符合公司形象的網站視覺</li>
+                    <li>使用Ｈtml、css完成網頁切端切版, 含響應式裝置</li>
+                  </ul>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="time-line-group animate__animated animate__delay-16s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
+              <div class="col-sm-1">
+                <div class="time-line-section">
+                  <div class="time-dot"></div>
+                  <div class="time-line"></div>
+                </div>
+              </div>
+              <div class="col-sm-11">
+                <div class="info-top">
+                  <span class="job-title">有樂生活有限公司 2023</span>
+                  <span>前端設計師</span>
+                </div>
+                <div class="info-introduction">簡介: 主要負責響應式網站前端切版 (接案)</div>
+                <div class="info-bottom">
+                  <ul>
+                    <li>與產品經理. 設計師/ 工程師配合, 協同執行專案</li>
+                    <li>依平台需求, 提供多面向建議與優化方案</li>
+                    <li>依據設計師網頁設計稿(電腦版) 做響應式延伸, 進行前端切版, 加入小動畫增添操作豐富度與體感</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div> -->
+            <!-- <div class="time-line-group animate__animated animate__delay-17s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
+              <div class="col-sm-1">
+                <div class="time-line-section">
+                  <div class="time-dot"></div>
+                  <div class="time-line"></div>
+                </div>
+              </div>
+              <div class="col-sm-11">
+                <div class="info-top">
+                  <span class="job-title">1111人力銀行 2022</span>
+                  <span>前端切版</span>
+                </div>
+                <div class="info-introduction">簡介: 協同多前端位切版師, 進行新版的響應式網站前端切版 (接案)</div>
+                <div class="info-bottom">
+                  <ul>
+                    <li>與專案經理、前端設計人員配合, 依據設計稿共同執行切版作業</li>
+                    <li>依溝通與確認，共同定義切版規範案</li>
+                  </ul>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="exp-content ">
+
             <div class="time-line-group animate__animated animate__delay-12s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 300 }">
               <div class="col-sm-1">
                 <div class="time-line-section">
