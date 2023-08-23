@@ -643,20 +643,20 @@ export const data: DiverseData = [
           resolveImageUrl("/images/web_game/game_008/game_008_2.webp"),
         ]
       },
-      {
-        type: "list",
-        id: "web_002_11",
-        sort: 0,
-        pageTitle: "體育平台版面設計",
-        description:"視覺主要走可愛Q版的風格",
-        image: resolveImageUrl("/images/web_game/game_007/game_007_1.webp"),
-        url: "",
-        myWork: "",
-        images: [
-          resolveImageUrl("/images/web_game/game_007/game_007_1.webp"),
-          resolveImageUrl("/images/web_game/game_007/game_007_2.webp"),
-        ]
-      },
+      // {
+      //   type: "list",
+      //   id: "web_002_11",
+      //   sort: 0,
+      //   pageTitle: "體育平台版面設計",
+      //   description:"視覺主要走可愛Q版的風格",
+      //   image: resolveImageUrl("/images/web_game/game_007/game_007_1.webp"),
+      //   url: "",
+      //   myWork: "",
+      //   images: [
+      //     resolveImageUrl("/images/web_game/game_007/game_007_1.webp"),
+      //     resolveImageUrl("/images/web_game/game_007/game_007_2.webp"),
+      //   ]
+      // },
       {
         type: "list",
         id: "web_002_04",
