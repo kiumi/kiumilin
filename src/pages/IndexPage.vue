@@ -222,7 +222,7 @@ function jumpTo(to: string) {
               </div>
               <div class="col-sm-11">
                 <div class="info-top">
-                  <span class="job-title">樂夠科技有限公司 2018 - 2022</span>
+                  <span class="job-title">雋上科技有限公司 2018 - 2022</span>
                   <span>網頁前端設計師</span>
                 </div>
                 <div class="info-introduction">簡介: 主要為多樣版網頁開發 / 模組化功能型平台/ UI、UX視覺設計/ 前端切版 </div>
