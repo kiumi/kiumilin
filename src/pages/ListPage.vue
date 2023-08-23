@@ -24,7 +24,7 @@ function backToPreviousOrIndex() {
           <span></span>
           <div class="title-tw">{{ props.pageTitle ?? "網頁平台" }}</div>
           <div class="company_url" v-if="props.url">
-          <a :href="props.url" target="_blank">
+          <a :href="props.url">
             連結
           </a>
         </div>

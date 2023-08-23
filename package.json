@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "vite": "vite",
     "dev": "source $HOME/.nvm/nvm.sh; nvm exec vite",
     "build": "source $HOME/.nvm/nvm.sh; nvm exec run-p type-check build-only",
     "preview": "source $HOME/.nvm/nvm.sh; nvm exec vite preview",
@@ -11,6 +12,9 @@
     "lint": "source $HOME/.nvm/nvm.sh; nvm exec eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@fontsource/jua": "^5.0.7",
+    "animate.css": "^4.1.1",
+    "esbuild": "^0.19.2",
     "pinia": "^2.1.3",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2"

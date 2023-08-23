@@ -328,7 +328,7 @@ function jumpTo(to: string) {
           <div class="title-tw">專案介紹</div>
         </div>
         <div class="flex project-content">
-          <RouterLink v-for="row in filterData" :key="row.id" :to="{ name: row.id }" class="project-items animate__animated animate__delay-12s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 500 }"  target="_blank">
+          <RouterLink v-for="row in filterData" :key="row.id" :to="{ name: row.id }" class="project-items animate__animated animate__delay-12s" v-scroll-over="{ class: 'animate__fadeIn', offsetY: 500 }">
             <div class="project-img">
               <img :src="row.image" alt="">
             </div>

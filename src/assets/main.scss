@@ -1,5 +1,5 @@
 @import './base.css';
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
 :root {
   --animate-delay: 1s;
 }
@@ -45,7 +45,7 @@ h1 {
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -5px;
+  margin-top: -3px;
 }
 #toggle:checked + .hamburger .bottom {
   transform: scale(0);
@@ -221,7 +221,7 @@ body {
   }
 }
 .back-btn {
-  font-family: bm jua;
+  font-family: jua;
   color: transparent;
   background-image: linear-gradient(90deg, rgba(243, 115, 53, 0.568627451) 0%, #F9779D 50%);
   -webkit-background-clip: text;
@@ -275,7 +275,7 @@ body {
     font-weight: bold;
   }
   .contact-mail {
-    font-family: bm jua;
+    font-family: jua;
     color: transparent;
     background-image: linear-gradient(90deg, #f3733591 0%, #F9779D 50%);
     -webkit-background-clip: text;
@@ -403,7 +403,7 @@ body {
 
 .back-index-btn {
   font-size: 22px;
-  font-family: bm jua;
+  font-family: jua;
   color: transparent;
   background-image: linear-gradient(90deg, rgba(243, 115, 53, 0.568627451) 0%, #F9779D 50%);
   -webkit-background-clip: text;

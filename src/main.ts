@@ -1,5 +1,7 @@
 import './assets/main.scss'
 
+import "@fontsource/jua"
+import "animate.css"
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
