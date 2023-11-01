@@ -23,7 +23,7 @@ function jumpTo(to: string) {
         <li>
           <a href="#">HOME</a>
         </li>
-        <li><a class="scrollto" href="#experience">EXPERIENCE</a></li>
+        <!-- <li><a class="scrollto" href="#experience">EXPERIENCE</a></li> -->
         <li><a class="scrollto" href="#skill">SKILL</a></li>
         <li><a class="scrollto" href="#project">PORTFOLIO</a></li>
         <li><a class="scrollto" href="#contact">CONTACT</a></li>
@@ -41,7 +41,7 @@ function jumpTo(to: string) {
       <div class="nav-wrapper">
         <nav>
           <a @click="jumpTo('#')">HOME</a>
-          <a @click="jumpTo('#experience')">EXPERIENCE</a>
+          <!-- <a @click="jumpTo('#experience')">EXPERIENCE</a> -->
           <a @click="jumpTo('#skill')">SKILL</a>
           <a @click="jumpTo('#project')">PORTFOLIO</a>
           <a @click="jumpTo('#contact')">CONTACT</a>
@@ -82,7 +82,8 @@ function jumpTo(to: string) {
         </div>
 
 
-        <a class="arrow-down" href="#experience"><img src="/images/arrow-down.svg"></a>
+        <!-- <a class="arrow-down" href="#experience"><img src="/images/arrow-down.svg"></a> -->
+        <a class="arrow-down" href="#skill"><img src="/images/arrow-down.svg"></a>
 
 
       </div>
